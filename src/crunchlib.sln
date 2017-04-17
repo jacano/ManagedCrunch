@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crunchlibShared", "crunchlibShared\crunchlibShared.vcxitems", "{45D41ACC-2C3C-43D2-BC10-02AA73FFC7C7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedCrunch", "ManagedCrunchLib\ManagedCrunch.csproj", "{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crunchlibClassic", "crunchlibClassic\crunchlibClassic.vcxproj", "{F801591C-3234-4053-8BFE-C8F5D0AD6936}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crunchlibUniversal", "crunchlibUniversal\crunchlibUniversal.vcxproj", "{BEE372FD-97AE-4A57-AED1-1DF12EC6E0AE}"
@@ -28,22 +26,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Debug|ARM.Build.0 = Debug|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Debug|x64.Build.0 = Debug|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Debug|x86.Build.0 = Debug|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Release|ARM.ActiveCfg = Release|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Release|ARM.Build.0 = Release|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Release|x64.ActiveCfg = Release|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Release|x64.Build.0 = Release|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Release|x86.ActiveCfg = Release|Any CPU
-		{B5108FFE-250A-4EF3-ADC2-F7079DC143BD}.Release|x86.Build.0 = Release|Any CPU
 		{F801591C-3234-4053-8BFE-C8F5D0AD6936}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{F801591C-3234-4053-8BFE-C8F5D0AD6936}.Debug|ARM.ActiveCfg = Debug|Win32
 		{F801591C-3234-4053-8BFE-C8F5D0AD6936}.Debug|x64.ActiveCfg = Debug|x64
