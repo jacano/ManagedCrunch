@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ManagedCrunch</id>
+        <version>1.0.0</version>
+        <authors>jacano</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>ManagedCrunch</description>
+    </metadata>
+    <files>
+	
+        <file src="build/ManagedCrunch.targets" target="build/ManagedCrunch.targets" />
+
+		<file src="ManagedCrunchLib/bin/Release/netstandard1.1/ManagedCrunch.dll" target="lib/netstandard1.1/ManagedCrunch.dll" />
+		
+		<file src="lib/windows/x64/Release/libCrunch.dll" target="runtimes/win7-x64/native/libCrunch.dll" />
+		<file src="lib/windows/Win32/Release/libCrunch.dll" target="runtimes/win7-x86/native/libCrunch.dll" />
+		
+		<file src="lib/uwp/x64/Release/libCrunch.dll" target="runtimes/win10-x64/native/libCrunch.dll" />
+		<file src="lib/uwp/Win32/Release/libCrunch.dll" target="runtimes/win10-x86/native/libCrunch.dll" />
+		<file src="lib/uwp/arm/Release/libCrunch.dll" target="runtimes/win10-arm/native/libCrunch.dll" />
+	
+    </files>
+</package>
