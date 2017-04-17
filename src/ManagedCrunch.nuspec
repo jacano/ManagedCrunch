@@ -9,7 +9,7 @@
     </metadata>
     <files>
 	
-        <file src="build/ManagedCrunch.targets" target="build/ManagedCrunch.targets" />
+        <file src="build/net45/ManagedCrunch.targets" target="build/net45/ManagedCrunch.targets" />
 
 		<file src="ManagedCrunchLib/bin/Release/netstandard1.1/ManagedCrunch.dll" target="lib/netstandard1.1/ManagedCrunch.dll" />
 		
