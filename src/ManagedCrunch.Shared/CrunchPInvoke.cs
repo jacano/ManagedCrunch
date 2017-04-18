@@ -7,7 +7,12 @@ namespace WaveCity3D
 {
     public static class CrunchPInvoke
     {
-        private const string DllName = "libCrunch.dll";
+#if __IOS__
+        private const string DllName = "__Internal";
+#else
+        private const string DllName = "libCrunch";
+#endif
+
         private const CallingConvention DefaultCallingConvention = CallingConvention.Cdecl;
 
         [DllImport(DllName, CallingConvention = DefaultCallingConvention)]

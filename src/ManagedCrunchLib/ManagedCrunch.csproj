@@ -12,4 +12,6 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
 
+  <Import Project="..\managedCrunch.Shared\managedCrunch.Shared.projitems" Label="Shared" />
+
 </Project>
