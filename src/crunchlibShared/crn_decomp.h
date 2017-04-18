@@ -68,7 +68,7 @@ namespace crnd
    // crnd_set_memory_callbacks() - Use to override the crnd library's memory allocation functions.
    // If any input parameters are NULL, the memory callback functions are reset to the default functions.
    // The default functions call malloc(), free(),  _msize(), _expand(), etc.
-   void crnd_set_memory_callbacks(crnd_realloc_func pRealloc, crnd_msize_func pMSize, void* pUser_data);
+   void crnd_set_memory_callbacks(crnd_realloc_func pRealloc, void* pUser_data);
 
    struct crn_file_info
    {
@@ -320,7 +320,10 @@ namespace crnd
 #ifdef WIN32
 #include <memory.h>
 #else
+#if defined(__APPLE__)
+#else 
 #include <malloc.h>
+#endif
 #endif
 #include <stdarg.h>
 #include <new> // needed for placement new, _msize, _expand
@@ -592,7 +595,7 @@ namespace crnd
    void*    crnd_malloc(size_t size, size_t* pActual_size = NULL);
    void*    crnd_realloc(void* p, size_t size, size_t* pActual_size = NULL, bool movable = true);
    void     crnd_free(void* p);
-   size_t   crnd_msize(void* p);
+   //size_t   crnd_msize(void* p);
 
    template<typename T>
    inline T* crnd_new()
@@ -2423,15 +2426,6 @@ namespace crnd
       if (!p)
       {
          p_new = ::malloc(size);
-
-         if (pActual_size)
-         {
-#ifdef WIN32
-            *pActual_size = p_new ? ::_msize(p_new) : 0;
-#else
-            *pActual_size = p_new ? malloc_usable_size(p_new) : 0;
-#endif
-         }
       }
       else if (!size)
       {
@@ -2459,46 +2453,24 @@ namespace crnd
             if (p_new)
                p_final_block = p_new;
          }
-
-         if (pActual_size)
-         {
-#ifdef WIN32
-            *pActual_size = ::_msize(p_final_block);
-#else
-            *pActual_size = ::malloc_usable_size(p_final_block);
-#endif
-         }
       }
 
       return p_new;
    }
 
-   static size_t crnd_default_msize(void* p, void* pUser_data)
-   {
-      pUser_data;
-#ifdef WIN32
-      return p ? _msize(p) : 0;
-#else
-      return p ? malloc_usable_size(p) : 0;
-#endif
-   }
-
    static crnd_realloc_func        g_pRealloc = crnd_default_realloc;
-   static crnd_msize_func          g_pMSize   = crnd_default_msize;
    static void*                   g_pUser_data;
 
-   void crnd_set_memory_callbacks(crnd_realloc_func pRealloc, crnd_msize_func pMSize, void* pUser_data)
+   void crnd_set_memory_callbacks(crnd_realloc_func pRealloc, void* pUser_data)
    {
-      if ((!pRealloc) || (!pMSize))
+      if ((!pRealloc))
       {
          g_pRealloc = crnd_default_realloc;
-         g_pMSize = crnd_default_msize;
          g_pUser_data = NULL;
       }
       else
       {
          g_pRealloc = pRealloc;
-         g_pMSize = pMSize;
          g_pUser_data = pUser_data;
       }
    }
@@ -2573,20 +2545,6 @@ namespace crnd
       }
 
       (*g_pRealloc)(p, 0, NULL, true, g_pUser_data);
-   }
-
-   size_t crnd_msize(void* p)
-   {
-      if (!p)
-         return 0;
-
-      if ((uint32)reinterpret_cast<ptr_bits>(p) & (CRND_MIN_ALLOC_ALIGNMENT - 1))
-      {
-         crnd_mem_error("crnd_msize: bad ptr");
-         return 0;
-      }
-
-      return (*g_pMSize)(p, g_pUser_data);
    }
 
 } // namespace crnd

@@ -21,4 +21,5 @@ BundleArtifacts/
 generate.info
 WaveContent.cs
 UpgradeLog*.htm
+*.payload.desc
 

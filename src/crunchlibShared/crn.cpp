@@ -4,7 +4,13 @@
 
 #include "crn_decomp.h"
 
-#define EXPORT extern "C" __declspec(dllexport)
+#ifndef EXPORT
+#	if defined(__GNUC__)
+#		define EXPORT __attribute__ ((visibility("default")))
+#	else
+#		define EXPORT extern "C" __declspec(dllexport)
+#	endif
+#endif
 
 EXPORT unsigned int Crn_get_width(void *src, unsigned int src_size) {
   crnd::crn_texture_info tex_info;
