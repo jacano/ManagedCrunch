@@ -2504,17 +2504,17 @@ namespace crnd
          return NULL;
       }
 
-      CRND_ASSERT(((uint32)p_new & (CRND_MIN_ALLOC_ALIGNMENT - 1)) == 0);
+      //CRND_ASSERT(((uint32)p_new & (CRND_MIN_ALLOC_ALIGNMENT - 1)) == 0);
       return p_new;
    }
 
    void* crnd_realloc(void* p, size_t size, size_t* pActual_size, bool movable)
    {
-      if ((uint32)reinterpret_cast<ptr_bits>(p) & (CRND_MIN_ALLOC_ALIGNMENT - 1))
+      /*if ((uint32)reinterpret_cast<ptr_bits>(p) & (CRND_MIN_ALLOC_ALIGNMENT - 1))
       {
          crnd_mem_error("crnd_realloc: bad ptr");
          return NULL;
-      }
+      }*/
 
       if (size > MAX_POSSIBLE_BLOCK_SIZE)
       {
@@ -2528,7 +2528,7 @@ namespace crnd
       if (pActual_size)
          *pActual_size = actual_size;
 
-      CRND_ASSERT(((uint32)p_new & (CRND_MIN_ALLOC_ALIGNMENT - 1)) == 0);
+      //CRND_ASSERT(((uint32)p_new & (CRND_MIN_ALLOC_ALIGNMENT - 1)) == 0);
 
       return p_new;
    }
@@ -2538,11 +2538,11 @@ namespace crnd
       if (!p)
          return;
 
-      if ((uint32)reinterpret_cast<ptr_bits>(p) & (CRND_MIN_ALLOC_ALIGNMENT - 1))
+      /*if ((uint32)reinterpret_cast<ptr_bits>(p) & (CRND_MIN_ALLOC_ALIGNMENT - 1))
       {
          crnd_mem_error("crnd_free: bad ptr");
          return;
-      }
+      }*/
 
       (*g_pRealloc)(p, 0, NULL, true, g_pUser_data);
    }
