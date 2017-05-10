@@ -12,13 +12,14 @@
         <file src="build/net45/ManagedCrunch.targets" target="build/net45/ManagedCrunch.targets" />
 
 		<file src="ManagedCrunchLib/bin/Release/netstandard1.1/ManagedCrunch.dll" target="lib/netstandard1.1/ManagedCrunch.dll" />
+		<file src="ManagedCrunch.Android/bin/Release/ManagedCrunch.dll" target="lib/MonoAndroid/ManagedCrunch.dll" />
 		
 		<file src="lib/windows/x64/Release/libCrunch.dll" target="runtimes/win7-x64/native/libCrunch.dll" />
 		<file src="lib/windows/Win32/Release/libCrunch.dll" target="runtimes/win7-x86/native/libCrunch.dll" />
 		
-		<file src="lib/uwp/x64/Release/libCrunch.dll" target="runtimes/win10-x64/native/libCrunch.dll" />
-		<file src="lib/uwp/Win32/Release/libCrunch.dll" target="runtimes/win10-x86/native/libCrunch.dll" />
-		<file src="lib/uwp/arm/Release/libCrunch.dll" target="runtimes/win10-arm/native/libCrunch.dll" />
-	
+		<file src="lib/uwp/x64/Release/libCrunch.dll" target="runtimes/win10-x64/nativeassets/libCrunch.dll" />
+		<file src="lib/uwp/Win32/Release/libCrunch.dll" target="runtimes/win10-x86/nativeassets/libCrunch.dll" />
+		<file src="lib/uwp/arm/Release/libCrunch.dll" target="runtimes/win10-arm/nativeassets/libCrunch.dll" />
+		
     </files>
 </package>
