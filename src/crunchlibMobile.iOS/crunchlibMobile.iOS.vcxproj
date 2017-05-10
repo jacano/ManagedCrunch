@@ -92,42 +92,42 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>libCrunch</TargetName>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\ios\obj\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(MSBuildProjectDirectory)\..\lib\ios\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>libCrunch</TargetName>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\ios\obj\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(MSBuildProjectDirectory)\..\lib\ios\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <TargetName>libCrunch</TargetName>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\ios\obj\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(MSBuildProjectDirectory)\..\lib\ios\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <TargetName>libCrunch</TargetName>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\ios\obj\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(MSBuildProjectDirectory)\..\lib\ios\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <TargetName>libCrunch</TargetName>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\ios\obj\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(MSBuildProjectDirectory)\..\lib\ios\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <TargetName>libCrunch</TargetName>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\ios\obj\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(MSBuildProjectDirectory)\..\lib\ios\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <TargetName>libCrunch</TargetName>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\ios\obj\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(MSBuildProjectDirectory)\..\lib\ios\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <TargetName>libCrunch</TargetName>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\ios\obj\$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(MSBuildProjectDirectory)\..\lib\ios\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
