@@ -11,7 +11,4 @@ before_install:
     - brew update && brew tap caskroom/cask && brew cask install xamarin-mdk && brew cask install xamarin-ios
 
 script: 
-    - echo test
-    - /Library/Frameworks/Mono.framework/Versions/Current/Commands/msbuild
-    - msbuild
-    - mono
+    - /Library/Frameworks/Mono.framework/Versions/Current/Commands/msbuild src/ManagedCrunch.sln
