@@ -42,6 +42,7 @@
     <ApplicationType>iOS</ApplicationType>
     <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
     <ProjectName>Crunch</ProjectName>
+	<RemoteRootDirectory>/Users/jacano/xcremote/</RemoteRootDirectory>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
