@@ -12,5 +12,5 @@ before_install:
 
 script: 
     - cd src
-    - /Library/Frameworks/Mono.framework/Versions/Current/Commands/msbuild /t:restore ManagedCrunch.sln
-    - /Library/Frameworks/Mono.framework/Versions/Current/Commands/msbuild ManagedCrunch.sln
+    - /Library/Frameworks/Mono.framework/Versions/Current/Commands/nuget restore ManagedCrunch.iOS.sln
+    - /Library/Frameworks/Mono.framework/Versions/Current/Commands/msbuild ManagedCrunch.iOS.sln
