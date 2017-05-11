@@ -12,4 +12,6 @@ before_install:
 
 script: 
     - echo test
-    - which msbuild
+    - /Library/Frameworks/Mono.framework/Versions/Current/Commands/msbuild
+    - msbuild
+    - mono

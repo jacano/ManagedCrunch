@@ -2,6 +2,8 @@
 - sudo installer -package MonoFramework-MDK-5.0.0.100.macos10.xamarin.universal.pkg -target /
 - curl -OL "https://dl.xamarin.com/MonoTouch/Mac/xamarin.ios-10.10.0.33.pkg"
 - sudo installer -package xamarin.ios-10.10.0.33.pkg -target /
+
+disable_homebrew: true
 	
 	
 https://dl.xamarin.com/MonoFrameworkMDK/Macx86/MonoFramework-MDK-5.0.0.100.macos10.xamarin.universal.pkg
