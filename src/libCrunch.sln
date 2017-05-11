@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crunch.Shared", "crunch.Shared\crunchlibShared.vcxitems", "{45D41ACC-2C3C-43D2-BC10-02AA73FFC7C7}"
 EndProject
@@ -11,13 +11,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crunch.Universal", "crunch.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crunch.Android", "crunch.Android\crunchlibMobile.Android.vcxproj", "{F6EC38ED-6525-4BC1-A34C-0286F11AF802}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crunch", "crunch.iOS\crunchlibMobile.iOS.vcxproj", "{D93495E2-53D6-4128-A23F-94A6E4B336E9}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		crunch.Shared\crunchlibShared.vcxitems*{45d41acc-2c3c-43d2-bc10-02aa73ffc7c7}*SharedItemsImports = 9
 		crunch.Shared\crunchlibShared.vcxitems*{bee372fd-97ae-4a57-aed1-1df12ec6e0ae}*SharedItemsImports = 4
-		crunch.Shared\crunchlibShared.vcxitems*{d93495e2-53d6-4128-a23f-94a6e4b336e9}*SharedItemsImports = 4
 		crunch.Shared\crunchlibShared.vcxitems*{f6ec38ed-6525-4bc1-a34c-0286f11af802}*SharedItemsImports = 4
 		crunch.Shared\crunchlibShared.vcxitems*{f801591c-3234-4053-8bfe-c8f5d0ad6936}*SharedItemsImports = 4
 	EndGlobalSection
@@ -82,24 +79,6 @@ Global
 		{F6EC38ED-6525-4BC1-A34C-0286F11AF802}.Release|x64.Build.0 = Release|x64
 		{F6EC38ED-6525-4BC1-A34C-0286F11AF802}.Release|x86.ActiveCfg = Release|x86
 		{F6EC38ED-6525-4BC1-A34C-0286F11AF802}.Release|x86.Build.0 = Release|x86
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Debug|ARM.ActiveCfg = Debug|ARM
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Debug|ARM.Build.0 = Debug|ARM
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Debug|ARM64.ActiveCfg = Debug|ARM64
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Debug|ARM64.Build.0 = Debug|ARM64
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Debug|x64.ActiveCfg = Debug|x64
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Debug|x64.Build.0 = Debug|x64
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Debug|x86.ActiveCfg = Debug|x86
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Debug|x86.Build.0 = Debug|x86
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Release|Any CPU.ActiveCfg = Release|x86
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Release|ARM.ActiveCfg = Release|ARM
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Release|ARM.Build.0 = Release|ARM
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Release|ARM64.ActiveCfg = Release|ARM64
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Release|ARM64.Build.0 = Release|ARM64
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Release|x64.ActiveCfg = Release|x64
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Release|x64.Build.0 = Release|x64
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Release|x86.ActiveCfg = Release|x86
-		{D93495E2-53D6-4128-A23F-94A6E4B336E9}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
