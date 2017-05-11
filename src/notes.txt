@@ -16,3 +16,6 @@ https://download.microsoft.com/download/1/1/4/114223DE-0AD6-4B8A-A8FB-164E5862AF
 
 
 http://xamarin.com/installer_assets/v3/vsmac/Mac/Universal/InstallationManifest.xml
+
+
+https://github.com/caskroom/homebrew-cask/blob/59cb165007f197783f227c7a2341ab6bae3f8af6/Casks/xamarin-jdk.rb
