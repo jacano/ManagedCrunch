@@ -41,7 +41,7 @@
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <ApplicationType>iOS</ApplicationType>
     <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
-    <ProjectName>crunch.iOS</ProjectName>
+    <ProjectName>Crunch</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
