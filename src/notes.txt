@@ -1,0 +1,15 @@
+- curl -OL "https://dl.xamarin.com/MonoFrameworkMDK/Macx86/MonoFramework-MDK-5.0.0.100.macos10.xamarin.universal.pkg" 
+- sudo installer -package MonoFramework-MDK-5.0.0.100.macos10.xamarin.universal.pkg -target /
+- curl -OL "https://dl.xamarin.com/MonoTouch/Mac/xamarin.ios-10.10.0.33.pkg"
+- sudo installer -package xamarin.ios-10.10.0.33.pkg -target /
+	
+	
+https://dl.xamarin.com/MonoFrameworkMDK/Macx86/MonoFramework-MDK-5.0.0.100.macos10.xamarin.universal.pkg
+https://dl.xamarin.com/MonoTouch/Mac/xamarin.ios-10.10.0.33.pkg
+
+https://dl.xamarin.com/VsMac/VisualStudioForMac-7.0.0.3146.dmg
+
+https://download.microsoft.com/download/1/1/4/114223DE-0AD6-4B8A-A8FB-164E5862AF6E/dotnet-dev-osx-x64.1.0.3.pkg
+
+
+http://xamarin.com/installer_assets/v3/vsmac/Mac/Universal/InstallationManifest.xml
