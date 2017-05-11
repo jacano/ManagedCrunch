@@ -8,6 +8,7 @@ disable_homebrew: true
 	
 https://dl.xamarin.com/MonoFrameworkMDK/Macx86/MonoFramework-MDK-5.0.0.100.macos10.xamarin.universal.pkg
 https://dl.xamarin.com/MonoTouch/Mac/xamarin.ios-10.10.0.33.pkg
+https://dl.xamarin.com/MonoforAndroid/Mac/xamarin.android-7.3.0-13.pkg
 
 https://dl.xamarin.com/VsMac/VisualStudioForMac-7.0.0.3146.dmg
 
