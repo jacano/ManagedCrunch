@@ -10,5 +10,6 @@ ARTIFACT_NAME="ManagedCrunch.dll"
 AUTHORIZATION_TOKEN="Authorization: Bearer "$DROPBOX_KEY
 CONTENT_TYPE="Content-Type: application/octet-stream"
 DROPBOX_ARGS="Dropbox-API-Arg: {\"path\":\"/"$ARTIFACT_NAME"\", \"mode\":\"overwrite\"}"
+DROPBOX_URL="https://content.dropboxapi.com/2/files/upload"
 
-curl -X POST "https://content.dropboxapi.com/2/files/upload" -H $AUTHORIZATION_TOKEN -H $CONTENT_TYPE -H $DROPBOX_ARGS --data-binary @$ARTIFACT_NAME
+curl -X POST $DROPBOX_URL -H $AUTHORIZATION_TOKEN -H $CONTENT_TYPE -H $DROPBOX_ARGS --data-binary @"ManagedCrunch.iOS/bin/Release/"$ARTIFACT_NAME
