@@ -7,6 +7,8 @@ pushd crunchxcode
 xcodebuild -configuration Release
 popd
 
+cp crunchxcode/build/Release-iphoneos/libcrunch.a ManagedCrunch.iOS/
+
 $NUGET_BIN restore ManagedCrunch.iOS.sln
 $MSBUILD_BIN ManagedCrunch.iOS.sln /p:Configuration="Release" /p:Platform="Any CPU"
 
