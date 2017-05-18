@@ -42,6 +42,9 @@
       <Kind>Static</Kind>
     </NativeReference>
   </ItemGroup>
+    <ItemGroup>
+    <None Include="project.json" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
