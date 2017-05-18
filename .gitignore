@@ -19,8 +19,10 @@ BundleArtifacts/
 *.nvuser
 *.bak
 *.nuget.props
+*.payload.desc
+*.xcuserstate
+*.DS_Store
 generate.info
 WaveContent.cs
 UpgradeLog*.htm
-*.payload.desc
 
