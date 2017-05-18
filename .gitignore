@@ -9,6 +9,7 @@ artifacts/
 output/
 AppPackages/
 BundleArtifacts/
+crunch.build/
 
 *.suo
 *.user
