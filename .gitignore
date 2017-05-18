@@ -10,6 +10,7 @@ output/
 AppPackages/
 BundleArtifacts/
 crunch.build/
+xcuserdata/
 
 *.suo
 *.user
@@ -26,4 +27,6 @@ crunch.build/
 generate.info
 WaveContent.cs
 UpgradeLog*.htm
+contents.xcworkspacedata
+
 
