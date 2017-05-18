@@ -9,6 +9,8 @@ artifacts/
 output/
 AppPackages/
 BundleArtifacts/
+crunch.build/
+xcuserdata/
 
 *.suo
 *.user
@@ -25,4 +27,6 @@ BundleArtifacts/
 generate.info
 WaveContent.cs
 UpgradeLog*.htm
+contents.xcworkspacedata
+
 
