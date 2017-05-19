@@ -24,6 +24,7 @@ xcuserdata/
 *.payload.desc
 *.xcuserstate
 *.DS_Store
+*.userprefs
 generate.info
 WaveContent.cs
 UpgradeLog*.htm

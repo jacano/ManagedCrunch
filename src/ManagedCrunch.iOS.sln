@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedCrunch.Shared", "ManagedCrunch.Shared\ManagedCrunch.Shared.shproj", "{C3F7D186-ED4F-4F17-A3F7-C4535007289B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.iOS", "ManagedCrunch.iOS\ManagedCrunch.iOS.csproj", "{6F6EB097-9A09-4D12-B8EF-57E5156A5D85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.iOS", "ManagedCrunch.iOS\ManagedCrunch.iOS.csproj", "{993C3B29-2102-49DA-A92E-FA6E23E9A744}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -16,10 +16,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6F6EB097-9A09-4D12-B8EF-57E5156A5D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F6EB097-9A09-4D12-B8EF-57E5156A5D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F6EB097-9A09-4D12-B8EF-57E5156A5D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F6EB097-9A09-4D12-B8EF-57E5156A5D85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{993C3B29-2102-49DA-A92E-FA6E23E9A744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{993C3B29-2102-49DA-A92E-FA6E23E9A744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{993C3B29-2102-49DA-A92E-FA6E23E9A744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{993C3B29-2102-49DA-A92E-FA6E23E9A744}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
