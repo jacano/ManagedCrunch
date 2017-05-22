@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.4
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedCrunch.Shared", "ManagedCrunch.Shared\ManagedCrunch.Shared.shproj", "{C3F7D186-ED4F-4F17-A3F7-C4535007289B}"
 EndProject
@@ -9,6 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.iOS", "Manage
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		managedCrunch.Shared\managedCrunch.Shared.projitems*{993c3b29-2102-49da-a92e-fa6e23e9a744}*SharedItemsImports = 4
 		managedCrunch.Shared\managedCrunch.Shared.projitems*{c3f7d186-ed4f-4f17-a3f7-c4535007289b}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

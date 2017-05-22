@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace WaveCity3D
+namespace ManagedCrunch
 {
     public static class CrunchPInvoke
     {
