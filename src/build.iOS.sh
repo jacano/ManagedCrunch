@@ -3,11 +3,11 @@ NUGET_BIN=$MONO_DIR"nuget"
 MSBUILD_BIN=$MONO_DIR"msbuild"
 
 
-pushd crunchxcode
+pushd crunch.xcode
 xcodebuild -configuration Release
 popd
 
-cp crunchxcode/build/Release-iphoneos/libcrunch.a ManagedCrunch.iOS/
+cp crunch.xcode/build/Release-iphoneos/libcrunch.a ManagedCrunch.iOS/
 
 $NUGET_BIN restore ManagedCrunch.iOS.sln
 $MSBUILD_BIN ManagedCrunch.iOS.sln /p:Configuration="Release" /p:Platform="Any CPU"

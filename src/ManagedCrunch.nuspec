@@ -11,8 +11,8 @@
 	
         <file src="build/net45/ManagedCrunch.targets" target="build/net45" />
 
-		<file src="ManagedCrunchLib/bin/Release/netstandard1.1/ManagedCrunch.dll" target="lib/netstandard1.1" />
-		<file src="ManagedCrunchLib/bin/Release/net45/ManagedCrunch.dll" target="lib/net45" />
+		<file src="ManagedCrunch.Lib/bin/Release/netstandard1.1/ManagedCrunch.dll" target="lib/netstandard1.1" />
+		<file src="ManagedCrunch.Lib/bin/Release/net45/ManagedCrunch.dll" target="lib/net45" />
 		<file src="ManagedCrunch.Android/bin/Release/ManagedCrunch.dll" target="lib/MonoAndroid" />
 		<file src="ManagedCrunch.iOS/bin/Release/ManagedCrunch.dll" target="lib/MonoTouch" />
 		
