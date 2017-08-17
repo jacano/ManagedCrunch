@@ -11,4 +11,9 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)CrunchTest.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)kodim15.crn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 </Project>
