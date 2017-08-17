@@ -1,16 +1,15 @@
 ﻿using System;
-using System.IO;
-using WaveCity3D;
+using System.Collections.Generic;
+using System.Text;
 
-namespace ManagedCrunch.Test
+namespace ManagedCrunch.Sample.Shared
 {
-    public class Program
+    public static class CrunchTest
     {
-        public static unsafe void Main()
+        public static unsafe byte[] CrnDecompress(byte[] textureIn)
         {
-            var textureData = File.ReadAllBytes("kodim15.crn");
-            var textureLength = (uint)textureData.Length;
-            fixed (byte* src = textureData)
+            var textureLength = (uint)textureIn.Length;
+            fixed (byte* src = textureIn)
             {
                 var width = (int)CrunchPInvoke.Crn_get_width(src, textureLength);
                 var height = (int)CrunchPInvoke.Crn_get_height(src, textureLength);
@@ -24,8 +23,8 @@ namespace ManagedCrunch.Test
                     CrunchPInvoke.Crn_decompress(src, textureLength, dst, uncompressedSize);
                 }
 
-                File.WriteAllBytes("kodim15.dds", dxt1Texture);
-            }  
+                return dxt1Texture;
+            }
         }
     }
 }
