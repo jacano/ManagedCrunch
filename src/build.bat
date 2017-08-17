@@ -8,10 +8,10 @@ msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="x64"
 msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="ARM"
 msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="ARM64"
 
-xcopy /Y lib\android\x86\Release\libCrunch.so ManagedCrunch.Lib\platforms\android\libs\x86
-xcopy /Y lib\android\x64\Release\libCrunch.so ManagedCrunch.Lib\platforms\android\libs\x86_64
-xcopy /Y lib\android\ARM\Release\libCrunch.so ManagedCrunch.Lib\platforms\android\libs\armeabi-v7a
-xcopy /Y lib\android\ARM64\Release\libCrunch.so ManagedCrunch.Lib\platforms\android\libs\arm64-v8a
+xcopy /F /R /Y /I .\lib\android\x86\Release\libCrunch.so .\ManagedCrunch.Lib\platforms\android\libs\x86\*
+xcopy /F /R /Y /I .\lib\android\x64\Release\libCrunch.so .\ManagedCrunch.Lib\platforms\android\libs\x86_64\*
+xcopy /F /R /Y /I .\lib\android\ARM\Release\libCrunch.so .\ManagedCrunch.Lib\platforms\android\libs\armeabi-v7a\*
+xcopy /F /R /Y /I .\lib\android\ARM64\Release\libCrunch.so .\ManagedCrunch.Lib\platforms\android\libs\arm64-v8a\*
 
 set ARTIFACT_NAME=libcrunch.a
 set ARTIFACT_PATH=ManagedCrunch.Lib\platforms\ios\%ARTIFACT_NAME%
