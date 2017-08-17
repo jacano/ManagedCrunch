@@ -1,5 +1,7 @@
-set VS2017="%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\Tools\VsMSBuildCmd.bat"
-if exist %VS2017% (call %VS2017%)
+pushd .
+set VS2017="%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\Tools\VsDevCmd.bat"
+call %VS2017%
+popd
 
 msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="x86"
 msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="x64"
