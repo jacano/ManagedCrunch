@@ -15,10 +15,10 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)../crunch/crn.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)crn.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)../crunch/crnlib.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)../crunch/crn_decomp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crnlib.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crn_decomp.h" />
   </ItemGroup>
 </Project>
