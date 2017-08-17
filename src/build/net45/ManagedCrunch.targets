@@ -1,38 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
 
-    <ItemGroup Condition=" '$(PlatformTarget)' == 'x86' ">
-        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win7-x86\native\libCrunch.dll">
-            <Link>libCrunch.dll</Link>
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-    </ItemGroup>
+	<!-- get the preferred architecture -->
+    <PropertyGroup>
+        <!-- handle VS 2017 live unit testing -->
+        <PreferredNativeCrunch Condition=" '$(PreferredNativeCrunch)' == '' and '$(BuildingForLiveUnitTesting)' == 'true' and '$(PlatformTarget)' == '' ">x86</PreferredNativeCrunch>   
 
-    <ItemGroup Condition=" '$(PlatformTarget)' == 'x64' ">
-        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win7-x64\native\libCrunch.dll">
-            <Link>libCrunch.dll</Link>
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-    </ItemGroup>
-	
-	<PropertyGroup Condition=" '$(PlatformTarget)' != 'x64' and '$(PlatformTarget)' != 'x86' ">
-        <PreferredNativeCrunch Condition=" '$(PreferredNativeCrunch)' == '' and '$(Prefer32Bit)' == 'False' ">x64</PreferredNativeCrunch>
+        <!-- handle x86/x64 specifically -->
+        <PreferredNativeCrunch Condition=" '$(PreferredNativeCrunch)' == '' and ( '$(PlatformTarget)' == 'x64' or '$(PlatformTarget)' == 'x86' ) ">$(PlatformTarget)</PreferredNativeCrunch> 
+        <!-- handle Any CPU, considering Prefer32Bit -->
+        <PreferredNativeCrunch Condition=" '$(PreferredNativeCrunch)' == '' and '$(Prefer32Bit)' == 'False' ">x64</PreferredNativeCrunch>  
+        <PreferredNativeCrunch Condition=" '$(PreferredNativeCrunch)' == '' and '$(Prefer32Bit)' == 'True' ">x86</PreferredNativeCrunch> 
+        <!-- fall back to x64 on 64-bit machines -->
+        <PreferredNativeCrunch Condition=" '$(PreferredNativeCrunch)' == '' and $([System.Environment]::Is64BitOperatingSystem) ">x64</PreferredNativeCrunch> 
+        <!-- fall back to x86 -->
         <PreferredNativeCrunch Condition=" '$(PreferredNativeCrunch)' == '' ">x86</PreferredNativeCrunch>
     </PropertyGroup>
 	
-	<ItemGroup Condition=" '$(PlatformTarget)' != 'x64' and '$(PlatformTarget)' != 'x86' ">
-        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win7-x86\native\libCrunch.dll">
+	<!-- get the preferred paths -->
+    <PropertyGroup>
+        <PreferredNativeCrunchPath>$(MSBuildThisFileDirectory)..\..\runtimes\win7-$(PreferredNativeCrunch)\native\libCrunch.dll</PreferredNativeCrunchPath> 
+    </PropertyGroup>
+	
+	<ItemGroup>
+        <None Include="$(PreferredNativeCrunchPath)" Condition=" Exists('$(PreferredNativeCrunchPath)') ">
+            <Link>$([System.IO.Path]::GetFilename('$(PreferredNativeCrunchPath)'))</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+	
+	
+	<!-- a special case for Any CPU -->
+    <ItemGroup Condition=" '$(PlatformTarget)' != 'x64' and '$(PlatformTarget)' != 'x86' ">
+        <!-- Windows -->
+        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win7-x86\native\libCrunch.dll"
+              Condition="Exists('$(MSBuildThisFileDirectory)..\..\runtimes\win7-x86\native\libCrunch.dll')">
             <Link>x86\libCrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
-        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win7-x64\native\libCrunch.dll">
+        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win7-x64\native\libCrunch.dll"
+              Condition="Exists('$(MSBuildThisFileDirectory)..\..\runtimes\win7-x64\native\libCrunch.dll')">
             <Link>x64\libCrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
-        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win7-$(PreferredNativeCrunch)\native\libCrunch.dll" Condition=" '$(PreferredNativeCrunch)' == 'x86' or '$(PreferredNativeCrunch)' == 'x64' ">
-            <Link>libCrunch.dll</Link>
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-    </ItemGroup>
+	</ItemGroup>
+	
 
 </Project>

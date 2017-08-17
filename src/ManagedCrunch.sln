@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedCrunch", "ManagedCrunch.Lib\ManagedCrunch.csproj", "{6729B237-5F55-4B5A-B9D8-DDFE4F3B06E1}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedCrunch.Shared", "ManagedCrunch.Shared\ManagedCrunch.Shared.shproj", "{C3F7D186-ED4F-4F17-A3F7-C4535007289B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.Android", "ManagedCrunch.Android\ManagedCrunch.Android.csproj", "{8CF3F62E-2293-4294-A09F-A8EE11C5DA61}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.Test", "ManagedCrunch.Test\ManagedCrunch.Test.csproj", "{D5155324-D19D-4DEC-AB05-4962042787A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedCrunch.Test", "ManagedCrunch.Test\ManagedCrunch.Test.csproj", "{D5155324-D19D-4DEC-AB05-4962042787A3}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -24,10 +22,6 @@ Global
 		{6729B237-5F55-4B5A-B9D8-DDFE4F3B06E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6729B237-5F55-4B5A-B9D8-DDFE4F3B06E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6729B237-5F55-4B5A-B9D8-DDFE4F3B06E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8CF3F62E-2293-4294-A09F-A8EE11C5DA61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8CF3F62E-2293-4294-A09F-A8EE11C5DA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8CF3F62E-2293-4294-A09F-A8EE11C5DA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8CF3F62E-2293-4294-A09F-A8EE11C5DA61}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D5155324-D19D-4DEC-AB05-4962042787A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D5155324-D19D-4DEC-AB05-4962042787A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5155324-D19D-4DEC-AB05-4962042787A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,5 +29,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2963B218-23A9-4FF9-B793-900D0635CEBD}
 	EndGlobalSection
 EndGlobal

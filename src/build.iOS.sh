@@ -1,19 +1,9 @@
-MONO_DIR="/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
-NUGET_BIN=$MONO_DIR"nuget"
-MSBUILD_BIN=$MONO_DIR"msbuild"
-
-
 pushd crunch.xcode
 xcodebuild -configuration Release
 popd
 
-cp crunch.xcode/build/Release-iphoneos/libcrunch.a ManagedCrunch.iOS/
-
-$NUGET_BIN restore ManagedCrunch.iOS.sln
-$MSBUILD_BIN ManagedCrunch.iOS.sln /p:Configuration="Release" /p:Platform="Any CPU"
-
-ARTIFACT_NAME="ManagedCrunch.dll"
-ARTIFACT_PATH="ManagedCrunch.iOS/bin/Release/$ARTIFACT_NAME"
+ARTIFACT_NAME="libcrunch.a"
+ARTIFACT_PATH="crunch.xcode/build/Release-iphoneos/$ARTIFACT_NAME"
 
 AUTHORIZATION_TOKEN="Authorization: Bearer $DROPBOX_KEY"
 CONTENT_TYPE="Content-Type: application/octet-stream"
