@@ -1,15 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFrameworks>netstandard1.1;net45;uap10.0;monoandroid70;xamarinios10</TargetFrameworks>
-	  <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-	  <DebugType>embedded</DebugType>
-    <TargetPlatformVersion Condition="'$(TargetFramework)' == 'uap10.0'">10.0.14393.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion Condition="'$(TargetFramework)' == 'uap10.0'">10.0.10586.0</TargetPlatformMinVersion>
-  </PropertyGroup>
-  
-  <PropertyGroup>
-    <SourceLinkCreate>true</SourceLinkCreate>
+	<TargetFrameworks>netstandard1.1;net45;uap10.0;monoandroid70;xamarinios10</TargetFrameworks>
+	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	<DebugType>embedded</DebugType>
+	<TargetPlatformVersion Condition="'$(TargetFramework)' == 'uap10.0'">10.0.14393.0</TargetPlatformVersion>
+	<TargetPlatformMinVersion Condition="'$(TargetFramework)' == 'uap10.0'">10.0.10586.0</TargetPlatformMinVersion>
   </PropertyGroup>
   
   <ItemGroup>

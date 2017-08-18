@@ -21,7 +21,7 @@ set DROPBOX_URL="https://content.dropboxapi.com/2/files/download"
 curl -X POST --header %AUTHORIZATION_TOKEN% --header %DROPBOX_ARGS% -o %ARTIFACT_PATH% %DROPBOX_URL%
 
 nuget restore ManagedCrunch.sln
-msbuild ManagedCrunch.sln /p:Configuration="Release" /p:Platform="Any CPU"
+msbuild ManagedCrunch.sln /p:Configuration="Release" /p:Platform="Any CPU" /p:SourceLinkCreate=true
 
 set /p PACKAGE_VERSION=<version.txt
 nuget pack ManagedCrunch.nuspec -Version %PACKAGE_VERSION%
