@@ -1,11 +1,33 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	<TargetFrameworks>netstandard1.1;net45;uap10.0;monoandroid70;xamarinios10</TargetFrameworks>
-	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-	<DebugType>embedded</DebugType>
-	<TargetPlatformVersion Condition="'$(TargetFramework)' == 'uap10.0'">10.0.14393.0</TargetPlatformVersion>
-	<TargetPlatformMinVersion Condition="'$(TargetFramework)' == 'uap10.0'">10.0.10586.0</TargetPlatformMinVersion>
+	  <TargetFrameworks>netstandard1.1;net45;uap10.0;MonoAndroid70;Xamarin.iOS10</TargetFrameworks>
+	  <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <!-- Workaround until Xamarin supports PPDB -->
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'MonoAndroid70' ">
+    <TargetFrameworkIdentifier>MonoAndroid</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <LanguageTargets>$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets</LanguageTargets>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'Xamarin.iOS10' ">
+    <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
+    <LanguageTargets>$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets</LanguageTargets>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'uap10.0' ">
+    <NugetTargetMoniker>UAP,Version=v10.0</NugetTargetMoniker>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <TargetFrameworkIdentifier>.NETCore</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <LanguageTargets>$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets</LanguageTargets>
   </PropertyGroup>
   
   <ItemGroup>
@@ -16,17 +38,17 @@
     <DotNetCliToolReference Include="dotnet-sourcelink-git" Version="2.1.0" />
     <DotNetCliToolReference Include="dotnet-sourcelink" Version="2.1.0" />
   </ItemGroup>
+  
+  <ItemGroup Condition=" '$(TargetFramework)' == 'uap10.0' ">
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform " Version="5.4.0" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="platforms\**\*.*" />
     <None Include="platforms\**\*.*" />
   </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'uap10.0' ">
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform " Version="5.4.0" />
-  </ItemGroup>
   
-  <ItemGroup Condition=" '$(TargetFramework)' == 'xamarinios10' ">
+  <ItemGroup Condition=" '$(TargetFramework)' == 'Xamarin.iOS10' ">
     <ObjcBindingApiDefinition Include="platforms\ios\ApiDefinition.cs" />
     <ObjcBindingCoreSource Include="platforms\ios\Structs.cs" />
     
@@ -37,7 +59,7 @@
      </EmbeddedResource>
   </ItemGroup>
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'monoandroid70' ">
+  <ItemGroup Condition=" '$(TargetFramework)' == 'MonoAndroid70' ">
     <EmbeddedNativeLibrary Include="platforms\android\libs\arm64-v8a\libCrunch.so" />
     <EmbeddedNativeLibrary Include="platforms\android\libs\armeabi-v7a\libCrunch.so" />
     <EmbeddedNativeLibrary Include="platforms\android\libs\x86\libCrunch.so" />
