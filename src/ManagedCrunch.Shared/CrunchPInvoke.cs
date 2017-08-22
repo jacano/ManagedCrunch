@@ -13,24 +13,22 @@ namespace ManagedCrunch
         private const string DllName = "libCrunch";
 #endif
 
-        private const CallingConvention DefaultCallingConvention = CallingConvention.Cdecl;
+        [DllImport(DllName, EntryPoint = "crn_get_width")]
+        public static unsafe extern uint crn_get_width(byte* inBuffer, uint inBufferSize);
 
-        [DllImport(DllName, CallingConvention = DefaultCallingConvention)]
-        public static unsafe extern uint Crn_get_width(byte* inBuffer, uint inBufferSize);
+        [DllImport(DllName, EntryPoint = "crn_get_height")]
+        public static unsafe extern uint crn_get_height(byte* inBuffer, uint inBufferSize);
 
-        [DllImport(DllName, CallingConvention = DefaultCallingConvention)]
-        public static unsafe extern uint Crn_get_height(byte* inBuffer, uint inBufferSize);
+        [DllImport(DllName, EntryPoint = "crn_get_levels")]
+        public static unsafe extern uint crn_get_levels(byte* inBuffer, uint inBufferSize);
 
-        [DllImport(DllName, CallingConvention = DefaultCallingConvention)]
-        public static unsafe extern uint Crn_get_levels(byte* inBuffer, uint inBufferSize);
+        [DllImport(DllName, EntryPoint = "crn_get_dxt_format")]
+        public static unsafe extern uint crn_get_dxt_format(byte* inBuffer, uint inBufferSize);
 
-        [DllImport(DllName, CallingConvention = DefaultCallingConvention)]
-        public static unsafe extern uint Crn_get_dxt_format(byte* inBuffer, uint inBufferSize);
+        [DllImport(DllName, EntryPoint = "crn_get_uncompressed_size")]
+        public static unsafe extern uint crn_get_uncompressed_size(byte* inBuffer, uint inBufferSize);
 
-        [DllImport(DllName, CallingConvention = DefaultCallingConvention)]
-        public static unsafe extern uint Crn_get_uncompressed_size(byte* inBuffer, uint inBufferSize);
-
-        [DllImport(DllName, CallingConvention = DefaultCallingConvention)]
-        public static unsafe extern void Crn_decompress(byte* inBuffer, uint inBufferSize, byte* outBuffer, uint outBufferSize);
+        [DllImport(DllName, EntryPoint = "crn_decompress")]
+        public static unsafe extern void crn_decompress(byte* inBuffer, uint inBufferSize, byte* outBuffer, uint outBufferSize);
     }
 }

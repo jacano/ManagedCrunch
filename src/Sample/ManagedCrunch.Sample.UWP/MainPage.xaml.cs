@@ -32,11 +32,11 @@ namespace ManagedCrunch.Sample.UWP
 
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            var textureData = File.ReadAllBytes("kodim15.crn");
-
-            var dxt1Texture = CrunchTest.CrnDecompress(textureData);
-
-            File.WriteAllBytes("kodim15.dds.raw", dxt1Texture);
+            FileHelper.ProcessEmbeddedFile("kodim15.crn", (b) =>
+            {
+                var dxt1Texture = CrunchTest.CrnDecompress(b);
+                // 196608
+            });
         }
     }
 }

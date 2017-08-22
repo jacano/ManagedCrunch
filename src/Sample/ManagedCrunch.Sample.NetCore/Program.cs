@@ -7,11 +7,11 @@ namespace ManagedCrunch.Test
     {
         public static void Main()
         {
-            var textureData = File.ReadAllBytes("kodim15.crn");
-
-            var dxt1Texture = CrunchTest.CrnDecompress(textureData);
-
-            File.WriteAllBytes("kodim15.dds.raw", dxt1Texture);
+            FileHelper.ProcessEmbeddedFile("kodim15.crn", (b) =>
+            {
+                var dxt1Texture = CrunchTest.CrnDecompress(b);
+                // 196608
+            });
         }
     }
 }

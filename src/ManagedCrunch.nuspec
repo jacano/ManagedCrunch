@@ -10,7 +10,8 @@
     <files>
 	
         <file src="build/net45/ManagedCrunch.targets" target="build/net45" />
-
+		<file src="build/MonoAndroid/ManagedCrunch.targets" target="build/MonoAndroid" />
+		
 		<file src="ManagedCrunch.Lib/bin/Release/netstandard1.1/ManagedCrunch.dll" target="lib/netstandard1.1" />
 		<file src="ManagedCrunch.Lib/bin/Release/net45/ManagedCrunch.dll" target="lib/net45" />
 		<file src="ManagedCrunch.Lib/bin/Release/monoandroid70/ManagedCrunch.dll" target="lib/MonoAndroid" />
@@ -24,5 +25,10 @@
 		<file src="lib/uwp/Win32/Release/libCrunch.dll" target="runtimes/win10-x86/nativeassets/uap10.0" />
 		<file src="lib/uwp/arm/Release/libCrunch.dll" target="runtimes/win10-arm/nativeassets/uap10.0" />
 		
+		<file src="lib/android/x86/Release/libCrunch.so" target="build/MonoAndroid/native/x86" />
+		<file src="lib/android/x64/Release/libCrunch.so" target="build/MonoAndroid/native/x86_64" />
+		<file src="lib/android/ARM/Release/libCrunch.so" target="build/MonoAndroid/native/armeabi-v7a" />
+		<file src="lib/android/ARM64/Release/libCrunch.so" target="build/MonoAndroid/native/arm64-v8a" />
+	
     </files>
 </package>

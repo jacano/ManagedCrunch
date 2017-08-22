@@ -10,10 +10,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)CrunchTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FileHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)kodim15.crn">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)kodim15.crn">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+      <LogicalName>kodim15.crn</LogicalName>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

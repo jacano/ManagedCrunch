@@ -56,14 +56,7 @@
     
     <EmbeddedResource Include="platforms\ios\libcrunch.a">
       <LogicalName>libcrunch.a</LogicalName>
-     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'MonoAndroid70' ">
-    <EmbeddedNativeLibrary Include="platforms\android\libs\arm64-v8a\libCrunch.so" />
-    <EmbeddedNativeLibrary Include="platforms\android\libs\armeabi-v7a\libCrunch.so" />
-    <EmbeddedNativeLibrary Include="platforms\android\libs\x86\libCrunch.so" />
-    <EmbeddedNativeLibrary Include="platforms\android\libs\x86_64\libCrunch.so" />
+    </EmbeddedResource>
   </ItemGroup>
 
   <Import Project="..\managedCrunch.Shared\managedCrunch.Shared.projitems" Label="Shared" />
