@@ -23,7 +23,7 @@ xcopy /F /R /Y /I .\lib\uwp\ARM\Release\libCrunch.dll .\build\uap10.0\uwp\arm\*
 xcopy /F /R /Y /I .\lib\windows\Win32\Release\libCrunch.dll .\build\net45\windows\x86\*
 xcopy /F /R /Y /I .\lib\windows\x64\Release\libCrunch.dll .\build\net45\windows\x64\*
 
-xcopy /F /R /Y /I .\lib\ios\libcrunch.a .\build\XamariniOS\ios\*
+xcopy /F /R /Y /I .\lib\ios\Release\libcrunch.a .\build\XamariniOS\ios\*
 
 nuget restore ManagedCrunch.sln
 msbuild ManagedCrunch.sln /p:Configuration="Release" /p:Platform="Any CPU" /p:SourceLinkCreate=true
