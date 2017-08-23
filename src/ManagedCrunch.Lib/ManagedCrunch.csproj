@@ -33,7 +33,7 @@
   <ItemGroup>
     <PackageReference Include="GitInfo" Version="2.0.0" />
     <PackageReference Include="MSBuild.Sdk.Extras" Version="1.0.6" PrivateAssets="All" />
-    <PackageReference Include="SourceLink.Create.CommandLine" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="SourceLink.Create.CommandLine" Version="2.2.0" PrivateAssets="All" />
 	
     <DotNetCliToolReference Include="dotnet-sourcelink-git" Version="2.1.0" />
     <DotNetCliToolReference Include="dotnet-sourcelink" Version="2.1.0" />
@@ -42,8 +42,6 @@
   <ItemGroup Condition=" '$(TargetFramework)' == 'uap10.0' ">
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform " Version="5.4.0" />
   </ItemGroup>
-    
-  <Import Project="..\managedCrunch.Shared\managedCrunch.Shared.projitems" Label="Shared" />
 
   <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
   

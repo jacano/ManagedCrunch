@@ -9,4 +9,4 @@ sudo: required
 
 script: 
     - cd src
-    - ./build.iOS.sh
+    - ./build_ios.sh

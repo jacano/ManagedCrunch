@@ -1,16 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.3
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedCrunch", "ManagedCrunch.Lib\ManagedCrunch.csproj", "{6729B237-5F55-4B5A-B9D8-DDFE4F3B06E1}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedCrunch.Shared", "ManagedCrunch.Shared\ManagedCrunch.Shared.shproj", "{C3F7D186-ED4F-4F17-A3F7-C4535007289B}"
-EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		managedCrunch.Shared\managedCrunch.Shared.projitems*{c3f7d186-ed4f-4f17-a3f7-c4535007289b}*SharedItemsImports = 13
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
