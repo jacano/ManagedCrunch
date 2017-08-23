@@ -4,13 +4,7 @@ pushd .
 call "%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\Tools\VsDevCmd.bat"
 popd
 
-set ARTIFACT_NAME=libcrunch.a
-set ARTIFACT_PATH=lib\ios\%ARTIFACT_NAME%
-if not defined DROPBOX_KEY ( set /p DROPBOX_KEY=<secrets\dropboxkey.txt )
-set AUTHORIZATION_TOKEN="Authorization: Bearer %DROPBOX_KEY%"
-set DROPBOX_ARGS="Dropbox-API-Arg: {\"path\":\"/%ARTIFACT_NAME%\"}"
-set DROPBOX_URL="https://content.dropboxapi.com/2/files/download"
-curl -X POST --header %AUTHORIZATION_TOKEN% --header %DROPBOX_ARGS% -o %ARTIFACT_PATH% %DROPBOX_URL%
+call grab_ios_build.bat
 
 msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="x86"
 msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="x64"

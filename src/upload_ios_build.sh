@@ -1,7 +1,3 @@
-pushd crunch.xcode
-xcodebuild -configuration Release
-popd
-
 if [ -z "$DROPBOX_KEY" ] 
 	then
 	DROPBOX_KEY=$(<secrets/dropboxkey.txt)
