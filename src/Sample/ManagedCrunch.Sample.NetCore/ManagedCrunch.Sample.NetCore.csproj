@@ -6,10 +6,12 @@
 	  <OutputType>Exe</OutputType>
   </PropertyGroup>
 
+  <Import Project="..\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems" Label="Shared" />
+
   <ItemGroup>
-    <PackageReference Include="ManagedCrunch" Version="1.0.10" />
+    <ProjectReference Include="..\..\ManagedCrunch.Lib\ManagedCrunch.csproj" />
   </ItemGroup>
 
-  <Import Project="..\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems" Label="Shared" />
+  <Import Project="..\..\build\net45\ManagedCrunch.targets" />
 
 </Project>

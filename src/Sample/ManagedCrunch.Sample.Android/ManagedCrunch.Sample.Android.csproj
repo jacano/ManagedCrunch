@@ -56,9 +56,6 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="ManagedCrunch" Version="1.0.10" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,28 +66,6 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
-
-  <ItemGroup>
-
-    <AndroidNativeLibrary Include="..\..\lib\android\ARM64\Release\libCrunch.so">
-      <Abi>arm64-v8a</Abi>
-    </AndroidNativeLibrary>
-
-    <AndroidNativeLibrary Include="..\..\lib\android\ARM\Release\libCrunch.so">
-      <Abi>armeabi-v7a</Abi>
-    </AndroidNativeLibrary>
-
-    <AndroidNativeLibrary Include="..\..\lib\android\x86\Release\libCrunch.so">
-      <Abi>x86</Abi>
-    </AndroidNativeLibrary>
-
-    <AndroidNativeLibrary Include="..\..\lib\android\x64\Release\libCrunch.so">
-      <Abi>x86_64</Abi>
-    </AndroidNativeLibrary>
-
-  </ItemGroup>
-
-
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
       <SubType>Designer</SubType>
@@ -105,8 +80,18 @@
     <Folder Include="Resources\mipmap-xxhdpi\" />
     <Folder Include="Resources\mipmap-xxxhdpi\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ManagedCrunch.Lib\ManagedCrunch.csproj">
+      <Project>{690b71fc-f6ad-4d45-93b9-7b731804077a}</Project>
+      <Name>ManagedCrunch</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="..\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+
+  <Import Project="..\..\build\MonoAndroid\ManagedCrunch.targets" />
+
+
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 		Other similar extension points exist, see Microsoft.Common.targets.
 		<Target Name="BeforeBuild">

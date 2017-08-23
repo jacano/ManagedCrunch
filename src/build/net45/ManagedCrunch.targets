@@ -19,7 +19,7 @@
 	
 	<!-- get the preferred paths -->
     <PropertyGroup>
-        <PreferredNativeCrunchPath>$(MSBuildThisFileDirectory)windows\(PreferredNativeCrunch)\libCrunch.dll</PreferredNativeCrunchPath> 
+        <PreferredNativeCrunchPath>$(MSBuildThisFileDirectory)windows\$(PreferredNativeCrunch)\libCrunch.dll</PreferredNativeCrunchPath> 
     </PropertyGroup>
 	
 	<ItemGroup>

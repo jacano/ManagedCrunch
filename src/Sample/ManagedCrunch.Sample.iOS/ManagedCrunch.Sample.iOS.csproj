@@ -120,10 +120,14 @@
     <Content Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="ManagedCrunch">
-      <Version>1.0.4</Version>
-    </PackageReference>
+    <ProjectReference Include="..\..\ManagedCrunch.Lib\ManagedCrunch.csproj">
+      <Project>{690b71fc-f6ad-4d45-93b9-7b731804077a}</Project>
+      <Name>ManagedCrunch</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+
+  <Import Project="..\..\build\XamariniOS\ManagedCrunch.targets" />
+
 </Project>
