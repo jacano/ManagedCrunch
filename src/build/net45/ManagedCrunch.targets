@@ -24,6 +24,7 @@
 	
 	<ItemGroup>
         <None Include="$(PreferredNativeCrunchPath)">
+			<Link>libCrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
     </ItemGroup>
@@ -32,9 +33,11 @@
 	<!-- a special case for Any CPU -->
     <ItemGroup Condition=" '$(PlatformTarget)' != 'x64' and '$(PlatformTarget)' != 'x86' ">
         <None Include="$(MSBuildThisFileDirectory)windows\x86\libCrunch.dll">
+			<Link>x86\libCrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
         <None Include="$(MSBuildThisFileDirectory)windows\x64\libCrunch.dll">
+			<Link>x64\libCrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
 	</ItemGroup>

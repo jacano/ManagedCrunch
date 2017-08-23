@@ -3,12 +3,15 @@
 
     <ItemGroup>
         <None Include="$(MSBuildThisFileDirectory)uwp\x86\libCrunch.dll">
+			<Link>x86\libCrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
         <None Include="$(MSBuildThisFileDirectory)uwp\x64\libCrunch.dll">
+			<Link>x64\libCrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
 		<None Include="$(MSBuildThisFileDirectory)uwp\arm\libCrunch.dll">
+			<Link>arm\libCrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
 	</ItemGroup>

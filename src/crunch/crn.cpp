@@ -12,31 +12,31 @@
 #	endif
 #endif
 
-EXPORT unsigned int Crn_get_width(void *src, unsigned int src_size) {
+EXPORT unsigned int crn_get_width(void *src, unsigned int src_size) {
   crnd::crn_texture_info tex_info;
   crnd::crnd_get_texture_info(static_cast<crn_uint8*>(src), src_size, &tex_info);
   return tex_info.m_width;
 }
 
-EXPORT unsigned int Crn_get_height(void *src, unsigned int src_size) {
+EXPORT unsigned int crn_get_height(void *src, unsigned int src_size) {
   crnd::crn_texture_info tex_info;
   crnd::crnd_get_texture_info(static_cast<crn_uint8*>(src), src_size, &tex_info);
   return tex_info.m_height;
 }
 
-EXPORT unsigned int Crn_get_levels(void *src, unsigned int src_size) {
+EXPORT unsigned int crn_get_levels(void *src, unsigned int src_size) {
   crnd::crn_texture_info tex_info;
   crnd::crnd_get_texture_info(static_cast<crn_uint8*>(src), src_size, &tex_info);
   return tex_info.m_levels;
 }
 
-EXPORT unsigned int Crn_get_dxt_format(void *src, unsigned int src_size) {
+EXPORT unsigned int crn_get_dxt_format(void *src, unsigned int src_size) {
   crnd::crn_texture_info tex_info;
   crnd::crnd_get_texture_info(static_cast<crn_uint8*>(src), src_size, &tex_info);
   return tex_info.m_format;
 }
 
-EXPORT unsigned int Crn_get_uncompressed_size(void *src, unsigned int src_size) {
+EXPORT unsigned int crn_get_uncompressed_size(void *src, unsigned int src_size) {
   crnd::crn_texture_info tex_info;
   crnd::crnd_get_texture_info(static_cast<crn_uint8*>(src), src_size, &tex_info);
   const crn_uint32 width = tex_info.m_width;
@@ -48,7 +48,7 @@ EXPORT unsigned int Crn_get_uncompressed_size(void *src, unsigned int src_size) 
   return total_face_size;
 }
 
-EXPORT void Crn_decompress(void *src, unsigned int src_size, void *dst, unsigned int dst_size) {
+EXPORT void crn_decompress(void *src, unsigned int src_size, void *dst, unsigned int dst_size) {
   crnd::crn_texture_info tex_info;
   crnd::crnd_get_texture_info(static_cast<crn_uint8*>(src), src_size, &tex_info);
   const crn_uint32 width = tex_info.m_width;
