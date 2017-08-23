@@ -1,4 +1,4 @@
-pushd crunch.xcode
+pushd crunch.iOS
 xcodebuild -configuration Release
 popd
 
