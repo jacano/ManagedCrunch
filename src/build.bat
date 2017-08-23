@@ -22,11 +22,11 @@ xcopy /F /R /Y /I .\lib\android\x64\Release\libCrunch.so .\build\MonoAndroid\and
 xcopy /F /R /Y /I .\lib\android\ARM\Release\libCrunch.so .\build\MonoAndroid\android\armeabi-v7a\*
 xcopy /F /R /Y /I .\lib\android\ARM64\Release\libCrunch.so .\build\MonoAndroid\android\arm64-v8a\*
 
-xcopy /F /R /Y /I .\lib\uwp\x86\Release\libCrunch.dll .\build\uap10.0\uwp\x86\*
+xcopy /F /R /Y /I .\lib\uwp\Win32\Release\libCrunch.dll .\build\uap10.0\uwp\x86\*
 xcopy /F /R /Y /I .\lib\uwp\x64\Release\libCrunch.dll .\build\uap10.0\uwp\x64\*
 xcopy /F /R /Y /I .\lib\uwp\ARM\Release\libCrunch.dll .\build\uap10.0\uwp\arm\*
 
-xcopy /F /R /Y /I .\lib\windows\x86\Release\libCrunch.dll .\build\net45\windows\x86\*
+xcopy /F /R /Y /I .\lib\windows\Win32\Release\libCrunch.dll .\build\net45\windows\x86\*
 xcopy /F /R /Y /I .\lib\windows\x64\Release\libCrunch.dll .\build\net45\windows\x64\*
 
 xcopy /F /R /Y /I .\lib\ios\libcrunch.a .\build\XamariniOS\ios\*

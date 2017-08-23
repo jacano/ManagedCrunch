@@ -9,9 +9,10 @@
     </metadata>
     <files>
 	
-        <file src="build/net45" target="build/net45" />
-		<file src="build/MonoAndroid" target="build/MonoAndroid" />
-		<file src="build/uap10.0" target="build/uap10.0" />
+        <file src="build/net45/**" target="build/net45" />
+		<file src="build/MonoAndroid/**" target="build/MonoAndroid" />
+		<file src="build/XamariniOS/**" target="build/XamariniOS" />
+		<file src="build/uap10.0/**" target="build/uap10.0" />
 		
 		<file src="ManagedCrunch.Lib/bin/Release/netstandard1.1/ManagedCrunch.dll" target="lib/netstandard1.1" />
 		<file src="ManagedCrunch.Lib/bin/Release/net45/ManagedCrunch.dll" target="lib/net45" />
