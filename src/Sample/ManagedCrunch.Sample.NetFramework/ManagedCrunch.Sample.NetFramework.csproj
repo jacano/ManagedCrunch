@@ -46,11 +46,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="ManagedCrunch" Version="1.0.9" />
+    <PackageReference Include="ManagedCrunch" Version="1.0.10" />
   </ItemGroup>
-  
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

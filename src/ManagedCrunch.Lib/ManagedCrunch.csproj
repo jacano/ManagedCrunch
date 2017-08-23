@@ -42,23 +42,7 @@
   <ItemGroup Condition=" '$(TargetFramework)' == 'uap10.0' ">
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform " Version="5.4.0" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="platforms\**\*.*" />
-    <None Include="platforms\**\*.*" />
-  </ItemGroup>
-  
-  <ItemGroup Condition=" '$(TargetFramework)' == 'Xamarin.iOS10' ">
-    <ObjcBindingApiDefinition Include="platforms\ios\ApiDefinition.cs" />
-    <ObjcBindingCoreSource Include="platforms\ios\Structs.cs" />
     
-    <Compile Include="platforms\ios\libcrunch.linkwith.cs" />
-    
-    <EmbeddedResource Include="platforms\ios\libcrunch.a">
-      <LogicalName>libcrunch.a</LogicalName>
-    </EmbeddedResource>
-  </ItemGroup>
-
   <Import Project="..\managedCrunch.Shared\managedCrunch.Shared.projitems" Label="Shared" />
 
   <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />

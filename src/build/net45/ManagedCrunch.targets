@@ -19,12 +19,11 @@
 	
 	<!-- get the preferred paths -->
     <PropertyGroup>
-        <PreferredNativeCrunchPath>$(MSBuildThisFileDirectory)..\..\runtimes\win7-$(PreferredNativeCrunch)\native\libCrunch.dll</PreferredNativeCrunchPath> 
+        <PreferredNativeCrunchPath>$(MSBuildThisFileDirectory)windows\(PreferredNativeCrunch)\libCrunch.dll</PreferredNativeCrunchPath> 
     </PropertyGroup>
 	
 	<ItemGroup>
-        <None Include="$(PreferredNativeCrunchPath)" Condition=" Exists('$(PreferredNativeCrunchPath)') ">
-            <Link>$([System.IO.Path]::GetFilename('$(PreferredNativeCrunchPath)'))</Link>
+        <None Include="$(PreferredNativeCrunchPath)">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
     </ItemGroup>
@@ -32,15 +31,10 @@
 	
 	<!-- a special case for Any CPU -->
     <ItemGroup Condition=" '$(PlatformTarget)' != 'x64' and '$(PlatformTarget)' != 'x86' ">
-        <!-- Windows -->
-        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win7-x86\native\libCrunch.dll"
-              Condition="Exists('$(MSBuildThisFileDirectory)..\..\runtimes\win7-x86\native\libCrunch.dll')">
-            <Link>x86\libCrunch.dll</Link>
+        <None Include="$(MSBuildThisFileDirectory)windows\x86\libCrunch.dll">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
-        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win7-x64\native\libCrunch.dll"
-              Condition="Exists('$(MSBuildThisFileDirectory)..\..\runtimes\win7-x64\native\libCrunch.dll')">
-            <Link>x64\libCrunch.dll</Link>
+        <None Include="$(MSBuildThisFileDirectory)windows\x64\libCrunch.dll">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
 	</ItemGroup>
