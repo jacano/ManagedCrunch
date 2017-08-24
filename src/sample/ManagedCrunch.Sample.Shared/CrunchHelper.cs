@@ -1,6 +1,6 @@
 ﻿namespace ManagedCrunch.Sample.Shared
 {
-    public static class CrunchTest
+    public static class CrunchHelper
     {
         public static unsafe byte[] CrnDecompress(byte[] textureIn)
         {

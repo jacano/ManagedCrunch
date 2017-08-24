@@ -14,7 +14,7 @@ namespace ManagedCrunch.Sample.NetFramework
         {
             FileHelper.ProcessEmbeddedFile("kodim15.crn", (b) =>
             {
-                var dxt1Texture = CrunchTest.CrnDecompress(b);
+                var dxt1Texture = CrunchHelper.CrnDecompress(b);
                 // 196608
             });
         }

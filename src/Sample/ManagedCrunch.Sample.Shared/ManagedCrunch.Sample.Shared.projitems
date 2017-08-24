@@ -9,7 +9,7 @@
     <Import_RootNamespace>ManagedCrunch.Sample.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)CrunchTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CrunchHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FileHelper.cs" />
   </ItemGroup>
   <ItemGroup>
