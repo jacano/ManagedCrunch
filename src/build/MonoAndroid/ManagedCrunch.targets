@@ -4,22 +4,18 @@
 	<ItemGroup>
   
 		<AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)android\arm64-v8a\libCrunch.so">
-		   <Link>arm64-v8a\libCrunch.so</Link>
 		   <Abi>arm64-v8a</Abi>
 		</AndroidNativeLibrary>
 		
 		<AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)android\armeabi-v7a\libCrunch.so">
-		   <Link>armeabi-v7a\libCrunch.so</Link>
 		   <Abi>armeabi-v7a</Abi>
 		</AndroidNativeLibrary>
 		
 		<AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)android\x86\libCrunch.so">
-		   <Link>x86\libCrunch.so</Link>
 		   <Abi>x86</Abi>
 		</AndroidNativeLibrary>
 		
 		<AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)android\x86_64\libCrunch.so">
-		   <Link>x86_64\libCrunch.so</Link>
 		   <Abi>x86_64</Abi>
 		</AndroidNativeLibrary>
 	
