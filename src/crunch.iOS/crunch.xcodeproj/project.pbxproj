@@ -23,9 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CE2ADA801ECE1B0900D68A3D /* crn_decomp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crn_decomp.h; sourceTree = "<group>"; };
-		CE2ADA811ECE1B0900D68A3D /* crn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crn.cpp; sourceTree = "<group>"; };
-		CE2ADA821ECE1B0900D68A3D /* crnlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crnlib.h; sourceTree = "<group>"; };
+		CE2ADA801ECE1B0900D68A3D /* crn_decomp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crn_decomp.h; path = ../crunch/crn_decomp.h; sourceTree = SOURCE_ROOT; };
+		CE2ADA811ECE1B0900D68A3D /* crn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = crn.cpp; path = ../crunch/crn.cpp; sourceTree = SOURCE_ROOT; };
+		CE2ADA821ECE1B0900D68A3D /* crnlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crnlib.h; path = ../crunch/crnlib.h; sourceTree = SOURCE_ROOT; };
 		CEEB418D1ECE1A87000D0013 /* libcrunch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcrunch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
