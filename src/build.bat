@@ -13,6 +13,7 @@ msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="ARM64"
 
 xcopy /F /R /Y /I .\lib\android\x86\Release\libCrunch.so .\build\MonoAndroid\android\x86\*
 xcopy /F /R /Y /I .\lib\android\x64\Release\libCrunch.so .\build\MonoAndroid\android\x86_64\*
+xcopy /F /R /Y /I .\lib\android\ARM\Release\libCrunch.so .\build\MonoAndroid\android\armeabi\*
 xcopy /F /R /Y /I .\lib\android\ARM\Release\libCrunch.so .\build\MonoAndroid\android\armeabi-v7a\*
 xcopy /F /R /Y /I .\lib\android\ARM64\Release\libCrunch.so .\build\MonoAndroid\android\arm64-v8a\*
 

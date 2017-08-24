@@ -6,7 +6,7 @@
 
 #ifndef EXPORT
 #	if defined(__GNUC__)
-#		define EXPORT __attribute__ ((visibility("default")))
+#		define EXPORT extern "C" __attribute__ ((visibility("default")))
 #	else
 #		define EXPORT extern "C" __declspec(dllexport)
 #	endif

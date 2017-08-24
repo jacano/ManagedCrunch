@@ -11,6 +11,10 @@
 		   <Abi>armeabi-v7a</Abi>
 		</AndroidNativeLibrary>
 		
+		<AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)android\armeabi\libCrunch.so">
+		   <Abi>armeabi</Abi>
+		</AndroidNativeLibrary>
+		
 		<AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)android\x86\libCrunch.so">
 		   <Abi>x86</Abi>
 		</AndroidNativeLibrary>
