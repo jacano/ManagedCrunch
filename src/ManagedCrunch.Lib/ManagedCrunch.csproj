@@ -1,48 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFrameworks>netstandard1.1;net45;uap10.0;MonoAndroid70;Xamarin.iOS10</TargetFrameworks>
+	  <TargetFramework>netstandard1.1</TargetFramework>
 	  <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
     <!-- Workaround until Xamarin supports PPDB -->
     <DebugType>full</DebugType>
   </PropertyGroup>
   
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'MonoAndroid70' ">
-    <TargetFrameworkIdentifier>MonoAndroid</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
-    <LanguageTargets>$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets</LanguageTargets>
-  </PropertyGroup>
-  
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'Xamarin.iOS10' ">
-    <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
-    <LanguageTargets>$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets</LanguageTargets>
-  </PropertyGroup>
-  
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'uap10.0' ">
-    <NugetTargetMoniker>UAP,Version=v10.0</NugetTargetMoniker>
-    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
-    <TargetFrameworkIdentifier>.NETCore</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
-    <LanguageTargets>$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets</LanguageTargets>
-  </PropertyGroup>
-  
   <ItemGroup>
     <PackageReference Include="GitInfo" Version="2.0.0" />
-    <PackageReference Include="MSBuild.Sdk.Extras" Version="1.0.6" PrivateAssets="All" />
     <PackageReference Include="SourceLink.Create.CommandLine" Version="2.2.0" PrivateAssets="All" />
 	
     <DotNetCliToolReference Include="dotnet-sourcelink-git" Version="2.1.0" />
     <DotNetCliToolReference Include="dotnet-sourcelink" Version="2.1.0" />
   </ItemGroup>
-  
-  <ItemGroup Condition=" '$(TargetFramework)' == 'uap10.0' ">
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform " Version="5.4.0" />
-  </ItemGroup>
-
-  <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
   
 </Project>
