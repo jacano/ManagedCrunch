@@ -3,16 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedCrunch", "ManagedCrunch.Lib\ManagedCrunch.csproj", "{6729B237-5F55-4B5A-B9D8-DDFE4F3B06E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedCrunch", "ManagedCrunch\ManagedCrunch.csproj", "{6729B237-5F55-4B5A-B9D8-DDFE4F3B06E1}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedCrunch.Lib.Shared", "ManagedCrunch.Lib.Shared\ManagedCrunch.Lib.Shared.shproj", "{B79F61DB-8227-47BB-B0C5-1B26718119AE}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedCrunch.Shared", "ManagedCrunch.Shared\ManagedCrunch.Shared.shproj", "{B79F61DB-8227-47BB-B0C5-1B26718119AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.Lib.iOS", "ManagedCrunch.Lib.iOS\ManagedCrunch.Lib.iOS.csproj", "{1727434E-BE6B-4E08-924F-43800AFA8D18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.iOS", "ManagedCrunch.iOS\ManagedCrunch.iOS.csproj", "{1727434E-BE6B-4E08-924F-43800AFA8D18}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		ManagedCrunch.Lib.Shared\ManagedCrunch.Lib.Shared.projitems*{1727434e-be6b-4e08-924f-43800afa8d18}*SharedItemsImports = 4
-		ManagedCrunch.Lib.Shared\ManagedCrunch.Lib.Shared.projitems*{b79f61db-8227-47bb-b0c5-1b26718119ae}*SharedItemsImports = 13
+		ManagedCrunch.Shared\ManagedCrunch.Shared.projitems*{1727434e-be6b-4e08-924f-43800afa8d18}*SharedItemsImports = 4
+		ManagedCrunch.Shared\ManagedCrunch.Shared.projitems*{b79f61db-8227-47bb-b0c5-1b26718119ae}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

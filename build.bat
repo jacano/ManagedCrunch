@@ -4,12 +4,13 @@ call prepare_msbuild.bat
 
 pushd src
 
-msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="x86"
-msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="x64"
-msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="ARM"
-msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="ARM64"
+msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="x86" /p:OutputPath="output"
+msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="x64" /p:OutputPath="output"
+msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="ARM" /p:OutputPath="output"
+msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="ARM64" /p:OutputPath="output"
 
 nuget restore ManagedCrunch.sln
-msbuild ManagedCrunch.sln /p:Configuration="Release" /p:Platform="Any CPU"
+msbuild ManagedCrunch\ManagedCrunch.csproj /p:Configuration="Release" /p:Platform="AnyCPU" /p:OutputPath="..\..\output\ManagedCrunch"
+msbuild ManagedCrunch.iOS\ManagedCrunch.iOS.csproj /p:Configuration="Release" /p:Platform="AnyCPU" /p:OutputPath="..\..\output\ManagedCrunch.iOS"
 
 popd

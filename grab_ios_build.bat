@@ -1,8 +1,8 @@
 @echo off
 
-if not defined DROPBOX_KEY ( set /p DROPBOX_KEY=<..\secrets\dropboxkey.txt )
+if not defined DROPBOX_KEY ( set /p DROPBOX_KEY=<secrets\dropboxkey.txt )
 
-set ARTIFACT_FOLDER=..\output\ios\Release\
+set ARTIFACT_FOLDER=output\ios\Release\
 rmdir /s /q %ARTIFACT_FOLDER%
 mkdir %ARTIFACT_FOLDER%
 
