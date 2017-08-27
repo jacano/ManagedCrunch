@@ -1,19 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFramework>netstandard1.1</TargetFramework>
-	  <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-    <!-- Workaround until Xamarin supports PPDB -->
-    <DebugType>full</DebugType>
+		<TargetFramework>netstandard1.1</TargetFramework>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<DebugType>full</DebugType>
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="GitInfo" Version="2.0.0" />
-    <PackageReference Include="SourceLink.Create.CommandLine" Version="2.2.0" PrivateAssets="All" />
+		<PackageReference Include="GitInfo" Version="2.0.0" />
+		<PackageReference Include="SourceLink.Create.CommandLine" Version="2.2.0" PrivateAssets="All" />
 	
-    <DotNetCliToolReference Include="dotnet-sourcelink-git" Version="2.1.0" />
-    <DotNetCliToolReference Include="dotnet-sourcelink" Version="2.1.0" />
+		<DotNetCliToolReference Include="dotnet-sourcelink-git" Version="2.1.0" />
+		<DotNetCliToolReference Include="dotnet-sourcelink" Version="2.1.0" />
   </ItemGroup>
   
 </Project>

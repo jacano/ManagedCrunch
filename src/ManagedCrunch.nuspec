@@ -15,10 +15,6 @@
 		<file src="build/uap10.0/**" target="build/uap10.0" />
 		
 		<file src="ManagedCrunch.Lib/bin/Release/netstandard1.1/ManagedCrunch.dll" target="lib/netstandard1.1" />
-		<file src="ManagedCrunch.Lib/bin/Release/net45/ManagedCrunch.dll" target="lib/net45" />
-		<file src="ManagedCrunch.Lib/bin/Release/monoandroid70/ManagedCrunch.dll" target="lib/MonoAndroid" />
-		<file src="ManagedCrunch.Lib/bin/Release/xamarin.ios10/ManagedCrunch.dll" target="lib/XamariniOS" />
-		<file src="ManagedCrunch.Lib/bin/Release/uap10.0/ManagedCrunch.dll" target="lib/uap10.0" />
 	
     </files>
 </package>
