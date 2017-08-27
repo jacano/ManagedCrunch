@@ -7,11 +7,9 @@
   </PropertyGroup>
   
   <ItemGroup>
-		<PackageReference Include="GitInfo" Version="2.0.0" />
-		<PackageReference Include="SourceLink.Create.CommandLine" Version="2.2.0" PrivateAssets="All" />
-	
-		<DotNetCliToolReference Include="dotnet-sourcelink-git" Version="2.1.0" />
-		<DotNetCliToolReference Include="dotnet-sourcelink" Version="2.1.0" />
+		<PackageReference Include="GitInfo" Version="2.0.1" />
   </ItemGroup>
+  
+  <Import Project="..\ManagedCrunch.Lib.Shared\ManagedCrunch.Lib.Shared.projitems" Label="Shared" />
   
 </Project>

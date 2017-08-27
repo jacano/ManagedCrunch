@@ -15,6 +15,6 @@
 		<file src="build/uap10.0/**" target="build/uap10.0" />
 		
 		<file src="ManagedCrunch.Lib/bin/Release/netstandard1.1/ManagedCrunch.dll" target="lib/netstandard1.1" />
-	
+		<file src="ManagedCrunch.Lib.iOS/bin/Release/ManagedCrunch.dll" target="lib/XamariniOS" />
     </files>
 </package>

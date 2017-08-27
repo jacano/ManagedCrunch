@@ -27,7 +27,7 @@ xcopy /F /R /Y /I .\lib\windows\x64\Release\libCrunch.dll .\build\net45\windows\
 xcopy /F /R /Y /I .\lib\ios\Release\libcrunch.a .\build\XamariniOS\ios\*
 
 nuget restore ManagedCrunch.sln
-msbuild ManagedCrunch.sln /p:Configuration="Release" /p:Platform="Any CPU" /p:SourceLinkCreate=true
+msbuild ManagedCrunch.sln /p:Configuration="Release" /p:Platform="Any CPU"
 
 set /p PACKAGE_VERSION=<version.txt
 nuget pack ManagedCrunch.nuspec -Version %PACKAGE_VERSION%
