@@ -73,25 +73,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(MSBuildProjectDirectory)\..\lib\windows\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir>$(MSBuildProjectDirectory)\..\..\output\windows\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(MSBuildProjectDirectory)\windows\obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>libCrunch</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(MSBuildProjectDirectory)\..\lib\windows\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir>$(MSBuildProjectDirectory)\..\..\output\windows\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(MSBuildProjectDirectory)\windows\obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>libCrunch</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(MSBuildProjectDirectory)\..\lib\windows\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir>$(MSBuildProjectDirectory)\..\..\output\windows\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(MSBuildProjectDirectory)\windows\obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>libCrunch</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(MSBuildProjectDirectory)\..\lib\windows\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir>$(MSBuildProjectDirectory)\..\..\output\windows\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(MSBuildProjectDirectory)\windows\obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>libCrunch</TargetName>
   </PropertyGroup>

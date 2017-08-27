@@ -26,6 +26,7 @@ secrets/
 *.xcuserstate
 *.DS_Store
 *.userprefs
+
 generate.info
 WaveContent.cs
 UpgradeLog*.htm

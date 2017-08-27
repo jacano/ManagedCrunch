@@ -1,4 +1,4 @@
-pushd crunch.iOS
+pushd src/crunch.iOS
 
 xcodebuild -configuration Release -sdk iphonesimulator clean build
 xcodebuild -configuration Release -sdk iphoneos clean build
