@@ -4,10 +4,17 @@ call prepare_msbuild.bat
 
 pushd src
 
-msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="x86" /p:OutputPath="output"
-msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="x64" /p:OutputPath="output"
-msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="ARM" /p:OutputPath="output"
-msbuild libCrunch.sln /p:Configuration="Release" /p:Platform="ARM64" /p:OutputPath="output"
+msbuild crunch.Classic\crunchlibClassic.vcxproj /p:Configuration="Release" /p:Platform="Win32" /p:OutputPath="..\..\output\windows\Win32"
+msbuild crunch.Classic\crunchlibClassic.vcxproj /p:Configuration="Release" /p:Platform="x64" /p:OutputPath="..\..\output\windows\x64"
+
+msbuild crunch.Universal\crunchlibUniversal.vcxproj /p:Configuration="Release" /p:Platform="Win32" /p:OutputPath="..\..\output\uwp\Win32"
+msbuild crunch.Universal\crunchlibUniversal.vcxproj /p:Configuration="Release" /p:Platform="x64" /p:OutputPath="..\..\output\uwp\x64"
+msbuild crunch.Universal\crunchlibUniversal.vcxproj /p:Configuration="Release" /p:Platform="ARM" /p:OutputPath="..\..\output\uwp\ARM"
+
+msbuild crunch.Android\crunchlibMobile.Android.vcxproj /p:Configuration="Release" /p:Platform="x86" /p:OutputPath="..\..\output\android\x86"
+msbuild crunch.Android\crunchlibMobile.Android.vcxproj /p:Configuration="Release" /p:Platform="x64" /p:OutputPath="..\..\output\android\x64"
+msbuild crunch.Android\crunchlibMobile.Android.vcxproj /p:Configuration="Release" /p:Platform="ARM" /p:OutputPath="..\..\output\android\ARM"
+msbuild crunch.Android\crunchlibMobile.Android.vcxproj /p:Configuration="Release" /p:Platform="ARM64" /p:OutputPath="..\..\output\android\ARM64"
 
 nuget restore ManagedCrunch.sln
 msbuild ManagedCrunch\ManagedCrunch.csproj /p:Configuration="Release" /p:Platform="AnyCPU" /p:OutputPath="..\..\output\ManagedCrunch"
