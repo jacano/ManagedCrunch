@@ -23,7 +23,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-	<OutputPath>bin\Debug</OutputPath>
+    <OutputPath>bin\Debug</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-	<OutputPath>bin\Release</OutputPath>
+    <OutputPath>bin\Release</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -40,6 +40,9 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <PackageReference Include="GitInfo" Version="2.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ios\ManagedCrunch.targets" />
   </ItemGroup>
   <Import Project="..\ManagedCrunch.Shared\ManagedCrunch.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

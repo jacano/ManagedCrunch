@@ -137,20 +137,17 @@
       <Version>5.4.0</Version>
     </PackageReference>
   </ItemGroup>
-  
   <ItemGroup>
     <ProjectReference Include="..\..\ManagedCrunch\ManagedCrunch.csproj">
+      <Project>{6729b237-5f55-4b5a-b9d8-ddfe4f3b06e1}</Project>
       <Name>ManagedCrunch</Name>
-	  <Project>{690b71fc-f6ad-4d45-93b9-7b731804077a}</Project>
     </ProjectReference>
   </ItemGroup>
-  
   <Import Project="..\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
-  
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

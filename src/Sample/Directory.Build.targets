@@ -1,9 +1,0 @@
-<Project>
-
-  <ItemGroup>
-    <ProjectReference Include="$(MSBuildThisFileDirectory)..\ManagedCrunch\$(TargetFramework)\..\ManagedCrunch.csproj">
-	<Name>ManagedCrunch</Name>
-	</ProjectReference>
-  </ItemGroup>
-
-</Project>
