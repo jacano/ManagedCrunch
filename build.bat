@@ -38,6 +38,11 @@ xcopy /F /R /Y /I output\windows\x64\libCrunch.dll nuget\build\net45\windows\x64
 call grab_ios_build.bat
 xcopy /F /R /Y /I output\ios\libcrunch.a nuget\build\XamariniOS\ios\*
 
+xcopy /F /R /Y /I src\ManagedCrunch\android\ManagedCrunch.target nuget\build\MonoAndroid\*
+xcopy /F /R /Y /I src\ManagedCrunch\windows\ManagedCrunch.target nuget\build\net45\*
+xcopy /F /R /Y /I src\ManagedCrunch\uwp\ManagedCrunch.target nuget\build\uap10.0\*
 xcopy /F /R /Y /I output\ManagedCrunch\ManagedCrunch.dll nuget\lib\netstandard1.1\*
+
+xcopy /F /R /Y /I src\ManagedCrunch\ios\ManagedCrunch.target nuget\build\XamariniOS\*
 xcopy /F /R /Y /I output\ManagedCrunch.iOS\ManagedCrunch.dll nuget\lib\XamariniOS\*
 

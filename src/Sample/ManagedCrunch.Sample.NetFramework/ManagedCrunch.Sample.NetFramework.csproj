@@ -53,15 +53,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\ManagedCrunch.Lib\ManagedCrunch.csproj">
-      <Project>{690b71fc-f6ad-4d45-93b9-7b731804077a}</Project>
-      <Name>ManagedCrunch</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="..\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-
-  <Import Project="..\..\build\net45\ManagedCrunch.targets" />
-
 </Project>
