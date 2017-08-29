@@ -127,6 +127,11 @@
       <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
   </ItemGroup>
+  
   <Import Project="..\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  
+      <Import Project="..\..\ManagedCrunch.iOS\ios\ManagedCrunch.targets" />
+  
+  
 </Project>

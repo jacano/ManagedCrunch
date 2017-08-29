@@ -5,7 +5,6 @@
     <PropertyGroup>
         <!-- handle VS 2017 live unit testing -->
         <PreferredNativeCrunch Condition=" '$(PreferredNativeCrunch)' == '' and '$(BuildingForLiveUnitTesting)' == 'true' and '$(PlatformTarget)' == '' ">x86</PreferredNativeCrunch>   
-
         <!-- handle x86/x64 specifically -->
         <PreferredNativeCrunch Condition=" '$(PreferredNativeCrunch)' == '' and ( '$(PlatformTarget)' == 'x64' or '$(PlatformTarget)' == 'x86' ) ">$(PlatformTarget)</PreferredNativeCrunch> 
         <!-- handle Any CPU, considering Prefer32Bit -->
@@ -24,7 +23,7 @@
 	
 	<ItemGroup>
         <None Include="$(PreferredNativeCrunchPath)">
-			<Link>libCrunch.dll</Link>
+			      <Link>libCrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
     </ItemGroup>
@@ -33,11 +32,11 @@
 	<!-- a special case for Any CPU -->
     <ItemGroup Condition=" '$(PlatformTarget)' != 'x64' and '$(PlatformTarget)' != 'x86' ">
         <None Include="$(MSBuildThisFileDirectory)x86\libCrunch.dll">
-			<Link>x86\libCrunch.dll</Link>
+			      <Link>x86\libCrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
         <None Include="$(MSBuildThisFileDirectory)x64\libCrunch.dll">
-			<Link>x64\libCrunch.dll</Link>
+			      <Link>x64\libCrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
 	</ItemGroup>

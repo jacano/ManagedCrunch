@@ -3,7 +3,7 @@
 
     <ItemGroup>
         <Content Include="$(MSBuildThisFileDirectory)$(Platform)\libCrunch.dll" Condition="Exists('$(MSBuildThisFileDirectory)$(Platform)\libCrunch.dll')">
-			<Link>libCrunch.dll</Link>
+			      <Link>libCrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
 	</ItemGroup>

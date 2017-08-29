@@ -11,5 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\ManagedCrunch\ManagedCrunch.csproj" />
   </ItemGroup>
-
+  
+  <Import Project="..\..\ManagedCrunch\windows\ManagedCrunch.targets" />
+  
 </Project>
