@@ -11,6 +11,11 @@ msbuild crunch.Universal/crunchlibUniversal.vcxproj /p:Configuration="Release" /
 msbuild crunch.Universal/crunchlibUniversal.vcxproj /p:Configuration="Release" /p:Platform="x64" /p:OutDir="../../output/uwp/x64/"
 msbuild crunch.Universal/crunchlibUniversal.vcxproj /p:Configuration="Release" /p:Platform="ARM" /p:OutDir="../../output/uwp/ARM/"
 
+del /s /f /q crunch.Android\x86
+del /s /f /q crunch.Android\x64
+del /s /f /q crunch.Android\ARM
+del /s /f /q crunch.Android\ARM64
+
 msbuild crunch.Android/crunchlibMobile.Android.vcxproj /p:Configuration="Release" /p:Platform="x86" /p:OutDir="../../output/android/x86/"
 msbuild crunch.Android/crunchlibMobile.Android.vcxproj /p:Configuration="Release" /p:Platform="x64" /p:OutDir="../../output/android/x64/"
 msbuild crunch.Android/crunchlibMobile.Android.vcxproj /p:Configuration="Release" /p:Platform="ARM" /p:OutDir="../../output/android/ARM/"
