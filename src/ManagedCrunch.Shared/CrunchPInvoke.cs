@@ -7,7 +7,7 @@ namespace ManagedCrunch
 #if __IOS__
         private const string DllName = "__Internal";
 #else
-        private const string DllName = "libCrunch";
+        private const string DllName = "libcrunch";
 #endif
 
         private const CallingConvention CallingConventionValue = CallingConvention.Cdecl;
