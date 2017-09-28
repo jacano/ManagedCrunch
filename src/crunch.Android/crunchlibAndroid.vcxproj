@@ -37,7 +37,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{d270d4bd-c64b-480f-b773-d9baa253fc45}</ProjectGuid>
     <Keyword>Android</Keyword>
-    <RootNamespace>crunchlibMobile_Android</RootNamespace>
+    <RootNamespace>crunchlib_Android</RootNamespace>
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <ApplicationType>Android</ApplicationType>
     <ApplicationTypeRevision>3.0</ApplicationTypeRevision>
@@ -92,28 +92,28 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <TargetName>libCrunch</TargetName>
+    <TargetName>libcrunch</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <TargetName>libCrunch</TargetName>
+    <TargetName>libcrunch</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-    <TargetName>libCrunch</TargetName>
+    <TargetName>libcrunch</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
-    <TargetName>libCrunch</TargetName>
+    <TargetName>libcrunch</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
-    <TargetName>libCrunch</TargetName>
+    <TargetName>libcrunch</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
-    <TargetName>libCrunch</TargetName>
+    <TargetName>libcrunch</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <TargetName>libCrunch</TargetName>
+    <TargetName>libcrunch</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
-    <TargetName>libCrunch</TargetName>
+    <TargetName>libcrunch</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>

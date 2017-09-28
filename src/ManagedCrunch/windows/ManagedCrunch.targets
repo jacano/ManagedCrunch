@@ -18,12 +18,12 @@
 	
 	<!-- get the preferred paths -->
     <PropertyGroup>
-        <PreferredNativeCrunchPath>$(MSBuildThisFileDirectory)$(PreferredNativeCrunch)\libCrunch.dll</PreferredNativeCrunchPath> 
+        <PreferredNativeCrunchPath>$(MSBuildThisFileDirectory)$(PreferredNativeCrunch)\libcrunch.dll</PreferredNativeCrunchPath> 
     </PropertyGroup>
 	
 	<ItemGroup>
         <None Include="$(PreferredNativeCrunchPath)">
-			      <Link>libCrunch.dll</Link>
+			      <Link>libcrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
     </ItemGroup>
@@ -31,12 +31,12 @@
 	
 	<!-- a special case for Any CPU -->
     <ItemGroup Condition=" '$(PlatformTarget)' != 'x64' and '$(PlatformTarget)' != 'x86' ">
-        <None Include="$(MSBuildThisFileDirectory)x86\libCrunch.dll">
-			      <Link>x86\libCrunch.dll</Link>
+        <None Include="$(MSBuildThisFileDirectory)x86\libcrunch.dll">
+			      <Link>x86\libcrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
-        <None Include="$(MSBuildThisFileDirectory)x64\libCrunch.dll">
-			      <Link>x64\libCrunch.dll</Link>
+        <None Include="$(MSBuildThisFileDirectory)x64\libcrunch.dll">
+			      <Link>x64\libcrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
 	</ItemGroup>

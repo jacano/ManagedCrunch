@@ -16,10 +16,10 @@ del /s /f /q crunch.Android\x64
 del /s /f /q crunch.Android\ARM
 del /s /f /q crunch.Android\ARM64
 
-msbuild crunch.Android/crunchlibMobile.Android.vcxproj /p:Configuration="Release" /p:Platform="x86" /p:OutDir="../../output/android/x86/"
-msbuild crunch.Android/crunchlibMobile.Android.vcxproj /p:Configuration="Release" /p:Platform="x64" /p:OutDir="../../output/android/x64/"
-msbuild crunch.Android/crunchlibMobile.Android.vcxproj /p:Configuration="Release" /p:Platform="ARM" /p:OutDir="../../output/android/ARM/"
-msbuild crunch.Android/crunchlibMobile.Android.vcxproj /p:Configuration="Release" /p:Platform="ARM64" /p:OutDir="../../output/android/ARM64/"
+msbuild crunch.Android/crunchlibAndroid.vcxproj /p:Configuration="Release" /p:Platform="x86" /p:OutDir="../../output/android/x86/"
+msbuild crunch.Android/crunchlibAndroid.vcxproj /p:Configuration="Release" /p:Platform="x64" /p:OutDir="../../output/android/x64/"
+msbuild crunch.Android/crunchlibAndroid.vcxproj /p:Configuration="Release" /p:Platform="ARM" /p:OutDir="../../output/android/ARM/"
+msbuild crunch.Android/crunchlibAndroid.vcxproj /p:Configuration="Release" /p:Platform="ARM64" /p:OutDir="../../output/android/ARM64/"
 
 popd
 

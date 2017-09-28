@@ -9,7 +9,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crunch.Classic", "crunch.Cl
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crunch.Universal", "crunch.Universal\crunchlibUniversal.vcxproj", "{BEE372FD-97AE-4A57-AED1-1DF12EC6E0AE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crunchlibMobile.Android", "crunch.Android\crunchlibMobile.Android.vcxproj", "{D270D4BD-C64B-480F-B773-D9BAA253FC45}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crunch.Android", "crunch.Android\crunchlibAndroid.vcxproj", "{D270D4BD-C64B-480F-B773-D9BAA253FC45}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
