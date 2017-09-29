@@ -1,0 +1,8 @@
+android/
+!android/ManagedCrunch.targets
+
+uwp/
+!uwp/ManagedCrunch.targets
+
+windows/
+!windows/ManagedCrunch.targets
