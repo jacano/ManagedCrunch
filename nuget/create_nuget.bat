@@ -1,5 +1,8 @@
 @echo off
 
+del /s /f /q lib
+del /s /f /q build
+
 pushd ..
 
 call copy_native_libs.bat nuget\build\MonoAndroid nuget\build\uap10.0 nuget\build\net45 nuget\build\XamariniOS
