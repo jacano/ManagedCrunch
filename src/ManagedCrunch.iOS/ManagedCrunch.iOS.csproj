@@ -42,6 +42,7 @@
     <PackageReference Include="GitInfo" Version="2.0.1" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ios\ios\libcrunch.a" />
     <None Include="ios\ManagedCrunch.targets" />
   </ItemGroup>
   <Import Project="..\ManagedCrunch.Shared\ManagedCrunch.Shared.projitems" Label="Shared" />
