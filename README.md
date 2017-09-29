@@ -5,7 +5,7 @@ Managed wrapper for crnlib (https://github.com/BinomialLLC/crunch)
 [![Build Status](https://travis-ci.org/jacano/ManagedCrunch.svg?branch=develop)](https://travis-ci.org/jacano/ManagedCrunch)
 [![NuGet Badge](https://buildstats.info/nuget/ManagedCrunch)](https://www.nuget.org/packages/ManagedCrunch/)
 
-ManagedCrunch exposes the following crunchlib functions in C# using direct Pinvokes to C/C++ code:
+ManagedCrunch exposes the following crnlib functions in C# using direct Pinvokes to C/C++ code:
 * crn_get_width
 * crn_get_height
 * crn_get_levels
