@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
 
 	<ItemGroup>
-		<None Include="$(MSBuildThisFileDirectory)libcrunch.a">
+		<None Include="$(MSBuildThisFileDirectory)fat/libcrunch.a">
 			<Link>libcrunch.a</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>

@@ -2,7 +2,7 @@
 
 if not defined DROPBOX_KEY ( set /p DROPBOX_KEY=<secrets\dropboxkey.txt )
 
-set ARTIFACT_FOLDER=output\ios\
+set ARTIFACT_FOLDER=output\ios\fat\
 rmdir /s /q %ARTIFACT_FOLDER%
 mkdir %ARTIFACT_FOLDER%
 

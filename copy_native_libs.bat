@@ -14,4 +14,4 @@ xcopy /F /R /Y /I output\windows\Win32\libcrunch.dll %3%\x86\*
 xcopy /F /R /Y /I output\windows\x64\libcrunch.dll %3%\x64\*
 
 call grab_ios_build.bat
-xcopy /F /R /Y /I output\ios\libcrunch.a %4%\ios\*
+xcopy /F /R /Y /I output\ios\fat\libcrunch.a %4%\fat\*
