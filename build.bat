@@ -25,12 +25,11 @@ msbuild crunch.Android/crunchlibAndroid.vcxproj /p:Configuration="Release" /p:Pl
 
 popd
 
-call copy_native_libs.bat src\ManagedCrunch\android src\ManagedCrunch\uwp src\ManagedCrunch\windows src\ManagedCrunch.iOS\ios
+call copy_native_libs.bat src\ManagedCrunch\android src\ManagedCrunch\uwp src\ManagedCrunch\windows src\ManagedCrunch\ios
 
 pushd src
 
 nuget restore ManagedCrunch.sln
 msbuild ManagedCrunch/ManagedCrunch.csproj /p:Configuration="Release" /p:Platform="AnyCPU" /p:OutDir="../../output/ManagedCrunch/"
-msbuild ManagedCrunch.iOS/ManagedCrunch.iOS.csproj /p:Configuration="Release" /p:Platform="AnyCPU" /p:OutDir="../../output/ManagedCrunch.iOS/"
 
 popd

@@ -5,6 +5,7 @@
 		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
 		<DebugType>full</DebugType>
   </PropertyGroup>
+
   
   <ItemGroup>
 		<PackageReference Include="GitInfo" Version="2.0.1" />

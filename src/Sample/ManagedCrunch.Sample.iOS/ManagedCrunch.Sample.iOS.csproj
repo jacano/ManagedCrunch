@@ -120,18 +120,12 @@
     <Content Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ManagedCrunch.iOS\ManagedCrunch.iOS.csproj">
-      <Project>{1727434e-be6b-4e08-924f-43800afa8d18}</Project>
-      <Name>ManagedCrunch.iOS</Name>
-      <IsAppExtension>false</IsAppExtension>
-      <IsWatchApp>false</IsWatchApp>
+    <ProjectReference Include="..\..\ManagedCrunch\ManagedCrunch.csproj">
+      <Project>{6729b237-5f55-4b5a-b9d8-ddfe4f3b06e1}</Project>
+      <Name>ManagedCrunch</Name>
     </ProjectReference>
   </ItemGroup>
-  
   <Import Project="..\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  
-      <Import Project="..\..\ManagedCrunch.iOS\ios\ManagedCrunch.targets" />
-  
-  
+  <Import Project="..\..\ManagedCrunch\ios\ManagedCrunch.targets" />
 </Project>

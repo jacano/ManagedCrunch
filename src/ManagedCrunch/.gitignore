@@ -6,3 +6,7 @@ uwp/
 
 windows/
 !windows/ManagedCrunch.targets
+
+ios/
+!ios/ManagedCrunch.targets
+!ios/ManagedCrunch.dll.config
