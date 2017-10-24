@@ -12,6 +12,7 @@ BundleArtifacts/
 crunch.build/
 xcuserdata/
 secrets/
+libs/
 
 *.suo
 *.user

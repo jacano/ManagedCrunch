@@ -1,22 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.10
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crunch.Shared", "crunch.Shared\crunchlibShared.vcxitems", "{45D41ACC-2C3C-43D2-BC10-02AA73FFC7C7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crunch.Shared", "shared\crunchlibShared.vcxitems", "{45D41ACC-2C3C-43D2-BC10-02AA73FFC7C7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crunch.Classic", "crunch.Classic\crunchlibClassic.vcxproj", "{F801591C-3234-4053-8BFE-C8F5D0AD6936}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crunch.Classic", "classic\crunchlibClassic.vcxproj", "{F801591C-3234-4053-8BFE-C8F5D0AD6936}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crunch.Universal", "crunch.Universal\crunchlibUniversal.vcxproj", "{BEE372FD-97AE-4A57-AED1-1DF12EC6E0AE}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crunch.Android", "crunch.Android\crunchlibAndroid.vcxproj", "{D270D4BD-C64B-480F-B773-D9BAA253FC45}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crunch.Universal", "universal\crunchlibUniversal.vcxproj", "{BEE372FD-97AE-4A57-AED1-1DF12EC6E0AE}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		crunch.Shared\crunchlibShared.vcxitems*{45d41acc-2c3c-43d2-bc10-02aa73ffc7c7}*SharedItemsImports = 9
-		crunch.Shared\crunchlibShared.vcxitems*{bee372fd-97ae-4a57-aed1-1df12ec6e0ae}*SharedItemsImports = 4
-		crunch.Shared\crunchlibShared.vcxitems*{d270d4bd-c64b-480f-b773-d9baa253fc45}*SharedItemsImports = 4
-		crunch.Shared\crunchlibShared.vcxitems*{f801591c-3234-4053-8bfe-c8f5d0ad6936}*SharedItemsImports = 4
+		shared\crunchlibShared.vcxitems*{45d41acc-2c3c-43d2-bc10-02aa73ffc7c7}*SharedItemsImports = 9
+		shared\crunchlibShared.vcxitems*{bee372fd-97ae-4a57-aed1-1df12ec6e0ae}*SharedItemsImports = 4
+		shared\crunchlibShared.vcxitems*{f801591c-3234-4053-8bfe-c8f5d0ad6936}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,24 +58,6 @@ Global
 		{BEE372FD-97AE-4A57-AED1-1DF12EC6E0AE}.Release|x64.Build.0 = Release|x64
 		{BEE372FD-97AE-4A57-AED1-1DF12EC6E0AE}.Release|x86.ActiveCfg = Release|Win32
 		{BEE372FD-97AE-4A57-AED1-1DF12EC6E0AE}.Release|x86.Build.0 = Release|Win32
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Debug|ARM.ActiveCfg = Debug|ARM
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Debug|ARM.Build.0 = Debug|ARM
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Debug|ARM64.ActiveCfg = Debug|ARM64
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Debug|ARM64.Build.0 = Debug|ARM64
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Debug|x64.ActiveCfg = Debug|x64
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Debug|x64.Build.0 = Debug|x64
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Debug|x86.ActiveCfg = Debug|x86
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Debug|x86.Build.0 = Debug|x86
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Release|Any CPU.ActiveCfg = Release|x86
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Release|ARM.ActiveCfg = Release|ARM
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Release|ARM.Build.0 = Release|ARM
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Release|ARM64.ActiveCfg = Release|ARM64
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Release|ARM64.Build.0 = Release|ARM64
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Release|x64.ActiveCfg = Release|x64
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Release|x64.Build.0 = Release|x64
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Release|x86.ActiveCfg = Release|x86
-		{D270D4BD-C64B-480F-B773-D9BAA253FC45}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

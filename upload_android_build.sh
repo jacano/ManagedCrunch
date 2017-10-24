@@ -3,11 +3,11 @@ if [ -z "$DROPBOX_KEY" ]
 	DROPBOX_KEY=$(<secrets/dropboxkey.txt)
 fi
 
-pushd src/crunch.iOS
+pushd src/crunch.android
 
-ARTIFACT_PATH="ios.zip"
+ARTIFACT_PATH="android.zip"
 
-zip -r $ARTIFACT_PATH build/libcrunch.a
+zip -r $ARTIFACT_PATH libs
 
 ARTIFACT_NAME="/crunch/$ARTIFACT_PATH"
 DROPBOX_ARGS="Dropbox-API-Arg: {\"path\":\"$ARTIFACT_NAME\", \"mode\":\"overwrite\"}"
