@@ -6,4 +6,3 @@ lipo -create -output "build/libcrunch.a" "build/Release-iphoneos/libcrunch.a" "b
 
 popd
 
-sh upload_ios_build.sh

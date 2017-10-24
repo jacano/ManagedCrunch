@@ -14,13 +14,12 @@ function PrepareVSEnviroment()
 
 PrepareVSEnviroment
 
-pushd src/crunch.Windows
+pushd src/crunch.Windows/classic
 
-msbuild classic/crunchlibClassic.vcxproj /p:Configuration="Release" /p:Platform="Win32"
-msbuild classic/crunchlibClassic.vcxproj /p:Configuration="Release" /p:Platform="x64"
+msbuild crunchlibClassic.vcxproj /p:Configuration="Release" /p:Platform="Win32"
+msbuild crunchlibClassic.vcxproj /p:Configuration="Release" /p:Platform="x64"
 
-xcopy /F /R /Y /I output\windows\Win32\libcrunch.dll %3%\x86\*
-xcopy /F /R /Y /I output\windows\x64\libcrunch.dll %3%\x64\*
-
+xcopy /F /R /Y /I Win32\Release\libcrunch.dll build\x86\*
+xcopy /F /R /Y /I x64\Release\libcrunch.dll build\x64\*
 
 popd
