@@ -1,3 +1,5 @@
+sh helper.sh
+
 pushd src/crunch.iOS
 
 xcodebuild -configuration Release -sdk iphonesimulator clean build
@@ -6,3 +8,4 @@ lipo -create -output "build/libcrunch.a" "build/Release-iphoneos/libcrunch.a" "b
 
 popd
 
+ZipAndUploadToDropbox "crunch" "ios.zip" "src/crunch.ios/build"
