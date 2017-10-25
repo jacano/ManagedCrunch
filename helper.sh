@@ -16,7 +16,7 @@ ZipAndUploadToDropbox () {
 
 	pushd $BUILD_DIR
 
-	zip -r $ARTIFACT_NAME $ARTIFACT_NAME
+	zip -r $ARTIFACT_NAME .
 
 	curl -f -X POST --header "$AUTHORIZATION_TOKEN" --header "$CONTENT_TYPE" --header "$DROPBOX_ARGS" --data-binary @"$ARTIFACT_NAME" "$DROPBOX_URL"
 
