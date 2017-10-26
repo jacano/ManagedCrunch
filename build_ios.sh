@@ -1,4 +1,5 @@
-sh helper.sh
+my_dir="$(dirname "$0")"
+"$my_dir/helper.sh" 
 
 pushd src/crunch.iOS
 
