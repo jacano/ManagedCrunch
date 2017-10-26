@@ -4,7 +4,14 @@ pushd src/crunch.iOS
 
 xcodebuild -configuration Release -sdk iphonesimulator clean build
 xcodebuild -configuration Release -sdk iphoneos clean build
-lipo -create -output "build/fat/libcrunch.a" "build/Release-iphoneos/libcrunch.a" "build/Release-iphonesimulator/libcrunch.a"
+
+pushd build
+
+mkdir -p fat
+
+lipo -create -output "fat/libcrunch.a" "Release-iphoneos/libcrunch.a" "Release-iphonesimulator/libcrunch.a"
+
+popd
 
 popd
 
