@@ -1,6 +1,11 @@
 version: 1.0.{build}
 shallow_clone: true
 image: Visual Studio 2017
+environment:
+  DROPBOX_KEY:
+    secure: IFBEukGDsv0xRFWR6CVfthbvoNry3CsENbmc2aU6Bx7dKquyfcJfD7k3OS/8dSgDwDYwREHUC0/ThIuBHpchDKUvPJ8/xGdvZpufJ+Lxxh0=
+  APPVEYOR_RDP_PASSWORD:
+    secure: cFu+sYD5DOOukq+U/fsco+iZk31GcqDA8pg8moqIQQo=
 build:
     verbosity: minimal
 init:
