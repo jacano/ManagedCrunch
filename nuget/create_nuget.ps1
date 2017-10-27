@@ -1,9 +1,7 @@
-del /s /f /q lib
-del /s /f /q build
+Remove-Item lib -Force -Recurse
+Remove-Item build -Force -Recurse
 
 pushd ..
-
-call copy_native_libs.ps1 nuget\build\MonoAndroid nuget\build\uap10.0 nuget\build\net45 nuget\build\XamariniOS
 
 xcopy /F /R /Y /I src\ManagedCrunch\android\ManagedCrunch.targets nuget\build\MonoAndroid\*
 xcopy /F /R /Y /I src\ManagedCrunch\windows\ManagedCrunch.targets nuget\build\net45\*
@@ -12,10 +10,15 @@ xcopy /F /R /Y /I src\ManagedCrunch\ios\ManagedCrunch.targets nuget\build\Xamari
 
 xcopy /F /R /Y /I src\ManagedCrunch\ios\ManagedCrunch.dll.config nuget\build\XamariniOS\*
 
-xcopy /F /R /Y /I output\ManagedCrunch\ManagedCrunch.dll nuget\lib\netstandard1.1\*
+xcopy /F /R /Y /I src\ManagedCrunch\bin\Release\netstandard1.1\ManagedCrunch.dll nuget\lib\netstandard1.1\*
+
+Copy-Item artifacts/windows/* nuget/build/net45 -Force -Recurse
+Copy-Item artifacts/uwp/* nuget/build/uap10.0 -Force -Recurse
+Copy-Item artifacts/android/* nuget/build/MonoAndroid -Force -Recurse
+Copy-Item artifacts/ios/* nuget/build/XamariniOS -Force -Recurse
 
 popd
 
-set /p PACKAGE_VERSION=<version.txt
+#set /p PACKAGE_VERSION=<version.txt
 
-nuget pack ManagedCrunch.nuspec -Version %PACKAGE_VERSION%
+#nuget pack ManagedCrunch.nuspec -Version %PACKAGE_VERSION%
