@@ -12,4 +12,6 @@ xcopy /F /R /Y /I x64\Release\libcrunch.dll build\x64\*
 
 popd
 
-ZipAndUploadToDropbox ("crunch") ("windows.zip") ("src/crunch.Windows/classic/build")
+New-Item "artifacts" -type directory -force
+Move-Item "src/crunch.Windows/classic/build" "artifacts/windows" -Force
+

@@ -8,4 +8,5 @@ Rename-Item libs build
 
 popd
 
-ZipAndUploadToDropbox ("crunch") ("android.zip") ("src/crunch.android/build")
+New-Item "artifacts" -type directory -force
+Move-Item "src/crunch.android/build" "artifacts/android" -Force

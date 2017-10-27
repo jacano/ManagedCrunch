@@ -14,5 +14,6 @@ xcopy /F /R /Y /I ARM\Release\libcrunch.dll build\arm\*
 
 popd
 
-ZipAndUploadToDropbox ("crunch") ("uwp.zip") ("src/crunch.Windows/universal/build")
+New-Item "artifacts" -type directory -force
+Move-Item "src/crunch.Windows/universal/build" "artifacts/uwp" -Force
 
