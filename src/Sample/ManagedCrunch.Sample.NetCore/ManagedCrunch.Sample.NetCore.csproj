@@ -8,9 +8,7 @@
 
   <Import Project="..\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems" Label="Shared" />
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\ManagedCrunch\ManagedCrunch.csproj" />
-  </ItemGroup>
+  <Import Project="..\..\ManagedCrunch\ManagedCrunch.Shared.projitems" Label="Shared" />
   
   <Import Project="..\..\ManagedCrunch\windows\ManagedCrunch.targets" />
   
