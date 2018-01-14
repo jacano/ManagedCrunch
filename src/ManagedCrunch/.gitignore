@@ -1,3 +1,5 @@
+*.nupkg
+
 build/android/
 !build/android/ManagedCrunch.targets
 
