@@ -1,4 +1,4 @@
-Remove-Item lib -Force -Recurse
+Remove-Item src -Force -Recurse
 Remove-Item build -Force -Recurse
 
 pushd ..
@@ -10,7 +10,7 @@ xcopy /F /R /Y /I src\ManagedCrunch\ios\ManagedCrunch.targets nuget\build\Xamari
 
 xcopy /F /R /Y /I src\ManagedCrunch\ios\ManagedCrunch.dll.config nuget\build\XamariniOS\*
 
-xcopy /F /R /Y /I src\ManagedCrunch\bin\Release\netstandard1.1\ManagedCrunch.dll nuget\lib\netstandard1.1\*
+xcopy /F /R /Y /I src\ManagedCrunch\CrunchPInvoke.cs nuget\src\*
 
 Copy-Item artifacts/windows/* nuget/build/net45 -Force -Recurse
 Copy-Item artifacts/uwp/* nuget/build/uap10.0 -Force -Recurse
