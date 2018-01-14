@@ -7,9 +7,7 @@
   </PropertyGroup>
 
   <Import Project="..\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems" Label="Shared" />
-
-  <Import Project="..\..\ManagedCrunch\ManagedCrunch.Shared.projitems" Label="Shared" />
   
-  <Import Project="..\..\ManagedCrunch\windows\ManagedCrunch.targets" />
+  <Import Project="..\..\ManagedCrunch\build\windows\ManagedCrunch.targets" />
   
 </Project>

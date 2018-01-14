@@ -17,20 +17,16 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedCrunch.Sample.Shared
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.Sample.UWP", "Sample\ManagedCrunch.Sample.UWP\ManagedCrunch.Sample.UWP.csproj", "{0DA00A54-836A-49F8-98F3-6E820A0FA404}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedCrunch.Shared", "ManagedCrunch\ManagedCrunch.Shared.shproj", "{B79F61DB-8227-47BB-B0C5-1B26718119AE}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedCrunch.Shared", "ManagedCrunch\src\ManagedCrunch.Shared.shproj", "{B79F61DB-8227-47BB-B0C5-1B26718119AE}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		ManagedCrunch\ManagedCrunch.Shared.projitems*{0da00a54-836a-49f8-98f3-6e820a0fa404}*SharedItemsImports = 4
 		Sample\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{0da00a54-836a-49f8-98f3-6e820a0fa404}*SharedItemsImports = 4
 		Sample\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{32c183b4-a886-41c0-a2c5-2ebdd552372f}*SharedItemsImports = 13
-		ManagedCrunch\ManagedCrunch.Shared.projitems*{60f5209a-e2bb-401d-8733-d8d92f235ed3}*SharedItemsImports = 4
 		Sample\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{60f5209a-e2bb-401d-8733-d8d92f235ed3}*SharedItemsImports = 4
-		ManagedCrunch\ManagedCrunch.Shared.projitems*{6464e5d2-e1cc-4411-be48-629e014f26c8}*SharedItemsImports = 4
 		Sample\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{6464e5d2-e1cc-4411-be48-629e014f26c8}*SharedItemsImports = 4
-		ManagedCrunch\ManagedCrunch.Shared.projitems*{817da388-394d-4ee2-9747-bc1f9eac182e}*SharedItemsImports = 4
 		Sample\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{817da388-394d-4ee2-9747-bc1f9eac182e}*SharedItemsImports = 4
-		ManagedCrunch\ManagedCrunch.Shared.projitems*{b79f61db-8227-47bb-b0c5-1b26718119ae}*SharedItemsImports = 13
+		ManagedCrunch\src\ManagedCrunch.Shared.projitems*{b79f61db-8227-47bb-b0c5-1b26718119ae}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU

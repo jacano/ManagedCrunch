@@ -1,12 +1,12 @@
-android/
-!android/ManagedCrunch.targets
+build/android/
+!build/android/ManagedCrunch.targets
 
-uwp/
-!uwp/ManagedCrunch.targets
+build/uwp/
+!build/uwp/ManagedCrunch.targets
 
-windows/
-!windows/ManagedCrunch.targets
+build/windows/
+!build/windows/ManagedCrunch.targets
 
-ios/
-!ios/ManagedCrunch.targets
-!ios/ManagedCrunch.dll.config
+build/ios/
+!build/ios/ManagedCrunch.targets
+!build/ios/ManagedCrunch.dll.config

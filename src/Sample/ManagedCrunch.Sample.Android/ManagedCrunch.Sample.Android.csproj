@@ -81,9 +81,8 @@
     <Folder Include="Resources\mipmap-xxxhdpi\" />
   </ItemGroup>
   <Import Project="..\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems" Label="Shared" />
-  <Import Project="..\..\ManagedCrunch\ManagedCrunch.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
-  <Import Project="..\..\ManagedCrunch\android\ManagedCrunch.targets" />
+  <Import Project="..\..\ManagedCrunch\build\android\ManagedCrunch.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 		Other similar extension points exist, see Microsoft.Common.targets.
 		<Target Name="BeforeBuild">
