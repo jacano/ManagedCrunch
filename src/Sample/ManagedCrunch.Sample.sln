@@ -3,30 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{4A5F2D3B-E2E6-49B0-BC14-E7ABFA2354D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.Sample.Android", "ManagedCrunch.Sample.Android\ManagedCrunch.Sample.Android.csproj", "{60F5209A-E2BB-401D-8733-D8D92F235ED3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.Sample.Android", "Sample\ManagedCrunch.Sample.Android\ManagedCrunch.Sample.Android.csproj", "{60F5209A-E2BB-401D-8733-D8D92F235ED3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.Sample.iOS", "ManagedCrunch.Sample.iOS\ManagedCrunch.Sample.iOS.csproj", "{6464E5D2-E1CC-4411-BE48-629E014F26C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.Sample.iOS", "Sample\ManagedCrunch.Sample.iOS\ManagedCrunch.Sample.iOS.csproj", "{6464E5D2-E1CC-4411-BE48-629E014F26C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedCrunch.Sample.NetCore", "ManagedCrunch.Sample.NetCore\ManagedCrunch.Sample.NetCore.csproj", "{F62D4B61-86A9-408C-BD98-8EBCE668AACE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedCrunch.Sample.NetCore", "Sample\ManagedCrunch.Sample.NetCore\ManagedCrunch.Sample.NetCore.csproj", "{F62D4B61-86A9-408C-BD98-8EBCE668AACE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.Sample.NetFramework", "ManagedCrunch.Sample.NetFramework\ManagedCrunch.Sample.NetFramework.csproj", "{817DA388-394D-4EE2-9747-BC1F9EAC182E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.Sample.NetFramework", "Sample\ManagedCrunch.Sample.NetFramework\ManagedCrunch.Sample.NetFramework.csproj", "{817DA388-394D-4EE2-9747-BC1F9EAC182E}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedCrunch.Sample.Shared", "ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.shproj", "{32C183B4-A886-41C0-A2C5-2EBDD552372F}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedCrunch.Sample.Shared", "Sample\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.shproj", "{32C183B4-A886-41C0-A2C5-2EBDD552372F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.Sample.UWP", "ManagedCrunch.Sample.UWP\ManagedCrunch.Sample.UWP.csproj", "{0DA00A54-836A-49F8-98F3-6E820A0FA404}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.Sample.UWP", "Sample\ManagedCrunch.Sample.UWP\ManagedCrunch.Sample.UWP.csproj", "{0DA00A54-836A-49F8-98F3-6E820A0FA404}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedCrunch.Shared", "ManagedCrunch\src\ManagedCrunch.Shared.shproj", "{B79F61DB-8227-47BB-B0C5-1B26718119AE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1E12A9BA-5562-4609-B234-E9CC87A373F5}"
+	ProjectSection(SolutionItems) = preProject
+		..\ManagedCrunch\src\CrunchPInvoke.cs = ..\ManagedCrunch\src\CrunchPInvoke.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Sample\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{0da00a54-836a-49f8-98f3-6e820a0fa404}*SharedItemsImports = 4
-		Sample\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{32c183b4-a886-41c0-a2c5-2ebdd552372f}*SharedItemsImports = 13
-		Sample\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{60f5209a-e2bb-401d-8733-d8d92f235ed3}*SharedItemsImports = 4
-		Sample\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{6464e5d2-e1cc-4411-be48-629e014f26c8}*SharedItemsImports = 4
-		Sample\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{817da388-394d-4ee2-9747-bc1f9eac182e}*SharedItemsImports = 4
-		ManagedCrunch\src\ManagedCrunch.Shared.projitems*{b79f61db-8227-47bb-b0c5-1b26718119ae}*SharedItemsImports = 13
+		ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{0da00a54-836a-49f8-98f3-6e820a0fa404}*SharedItemsImports = 4
+		ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{32c183b4-a886-41c0-a2c5-2ebdd552372f}*SharedItemsImports = 13
+		ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{60f5209a-e2bb-401d-8733-d8d92f235ed3}*SharedItemsImports = 4
+		ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{6464e5d2-e1cc-4411-be48-629e014f26c8}*SharedItemsImports = 4
+		ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems*{817da388-394d-4ee2-9747-bc1f9eac182e}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -318,14 +318,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{60F5209A-E2BB-401D-8733-D8D92F235ED3} = {4A5F2D3B-E2E6-49B0-BC14-E7ABFA2354D8}
-		{6464E5D2-E1CC-4411-BE48-629E014F26C8} = {4A5F2D3B-E2E6-49B0-BC14-E7ABFA2354D8}
-		{F62D4B61-86A9-408C-BD98-8EBCE668AACE} = {4A5F2D3B-E2E6-49B0-BC14-E7ABFA2354D8}
-		{817DA388-394D-4EE2-9747-BC1F9EAC182E} = {4A5F2D3B-E2E6-49B0-BC14-E7ABFA2354D8}
-		{32C183B4-A886-41C0-A2C5-2EBDD552372F} = {4A5F2D3B-E2E6-49B0-BC14-E7ABFA2354D8}
-		{0DA00A54-836A-49F8-98F3-6E820A0FA404} = {4A5F2D3B-E2E6-49B0-BC14-E7ABFA2354D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2963B218-23A9-4FF9-B793-900D0635CEBD}
