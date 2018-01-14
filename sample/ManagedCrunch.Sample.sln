@@ -15,9 +15,9 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedCrunch.Sample.Shared
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCrunch.Sample.UWP", "ManagedCrunch.Sample.UWP\ManagedCrunch.Sample.UWP.csproj", "{0DA00A54-836A-49F8-98F3-6E820A0FA404}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1E12A9BA-5562-4609-B234-E9CC87A373F5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5E5CA843-6AB4-4B56-8D5B-D121983752C4}"
 	ProjectSection(SolutionItems) = preProject
-		..\ManagedCrunch\src\CrunchPInvoke.cs = ..\ManagedCrunch\src\CrunchPInvoke.cs
+		..\src\ManagedCrunch\src\CrunchPInvoke.cs = ..\src\ManagedCrunch\src\CrunchPInvoke.cs
 	EndProjectSection
 EndProject
 Global

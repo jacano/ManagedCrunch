@@ -8,6 +8,6 @@
 
   <Import Project="..\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems" Label="Shared" />
   
-  <Import Project="..\..\ManagedCrunch\build\windows\ManagedCrunch.targets" />
+  <Import Project="..\..\src\ManagedCrunch\build\net45\ManagedCrunch.targets" />
   
 </Project>
