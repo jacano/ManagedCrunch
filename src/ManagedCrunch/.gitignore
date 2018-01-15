@@ -1,14 +1,14 @@
 *.nupkg
 
-build/android/
-!build/android/ManagedCrunch.targets
+build/MonoAndroid/
+!build/MonoAndroid/ManagedCrunch.targets
 
-build/uwp/
-!build/uwp/ManagedCrunch.targets
+build/uap10.0/
+!build/uap10.0/ManagedCrunch.targets
 
-build/windows/
-!build/windows/ManagedCrunch.targets
+build/net45/
+!build/net45/ManagedCrunch.targets
 
-build/ios/
-!build/ios/ManagedCrunch.targets
-!build/ios/ManagedCrunch.dll.config
+build/XamariniOS/
+!build/XamariniOS/ManagedCrunch.targets
+!build/XamariniOS/ManagedCrunch.dll.config
