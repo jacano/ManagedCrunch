@@ -1,0 +1,12 @@
+MonoAndroid/
+!MonoAndroid/ManagedCrunch.targets
+
+uap10.0/
+!uap10.0/ManagedCrunch.targets
+
+net45/
+!net45/ManagedCrunch.targets
+
+XamariniOS/
+!XamariniOS/ManagedCrunch.targets
+!XamariniOS/ManagedCrunch.dll.config
