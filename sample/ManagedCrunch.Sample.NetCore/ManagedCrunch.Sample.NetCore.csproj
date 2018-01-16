@@ -4,10 +4,11 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
 	  <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
 	  <OutputType>Exe</OutputType>
+	  <Configurations>Debug;Release;Debug_Nuget</Configurations>
   </PropertyGroup>
 
   <Import Project="..\ManagedCrunch.Sample.Shared\ManagedCrunch.Sample.Shared.projitems" Label="Shared" />
   
-  <Import Project="..\..\src\ManagedCrunch\build\net45\ManagedCrunch.targets" />
+  <Import Project="..\..\src\ManagedCrunch\build\net45\ManagedCrunch.targets" Condition="'$(Configuration)' != 'Debug_Nuget'" />
   
 </Project>
