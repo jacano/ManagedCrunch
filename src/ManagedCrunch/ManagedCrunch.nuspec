@@ -7,13 +7,7 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>ManagedCrunch</description>
     </metadata>
-    <files>
-	
-        <file src="build/net45/**" />
-		<file src="build/MonoAndroid/**" />
-		<file src="build/XamariniOS/**" />
-		<file src="build/uap10.0/**" />
-		
-		<file src="src/**" /> 
+    <files>	
+		<file src="**" /> 
     </files>
 </package>
