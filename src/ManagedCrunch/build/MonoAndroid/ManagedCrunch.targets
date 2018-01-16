@@ -24,7 +24,7 @@
 		</AndroidNativeLibrary>
 		
 		<Compile Include="$(MSBuildThisFileDirectory)..\..\src\CrunchPInvoke.cs">
-			<Link>CrunchPInvoke.cs</Link>
+			<Link>ManagedCrunch\CrunchPInvoke.cs</Link>
 		</Compile>
 		
   </ItemGroup>

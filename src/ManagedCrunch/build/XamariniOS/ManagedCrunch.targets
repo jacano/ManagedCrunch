@@ -10,9 +10,8 @@
 			<Link>ManagedCrunch.dll.config</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
-		
 		<Compile Include="$(MSBuildThisFileDirectory)../../src/CrunchPInvoke.cs">
-			<Link>CrunchPInvoke.cs</Link>
+			<Link>ManagedCrunch\CrunchPInvoke.cs</Link>
 		</Compile>
 	</ItemGroup>  
   

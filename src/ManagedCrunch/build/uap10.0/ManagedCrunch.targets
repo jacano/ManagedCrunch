@@ -3,14 +3,14 @@
 
     <ItemGroup>
         <Content Include="$(MSBuildThisFileDirectory)$(Platform)\libcrunch.dll" Condition="Exists('$(MSBuildThisFileDirectory)$(Platform)\libcrunch.dll')">
-			      <Link>libcrunch.dll</Link>
+			<Link>libcrunch.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
 	</ItemGroup>
 	
 	<ItemGroup>
 		<Compile Include="$(MSBuildThisFileDirectory)..\..\src\CrunchPInvoke.cs">
-			<Link>CrunchPInvoke.cs</Link>
+			<Link>ManagedCrunch\CrunchPInvoke.cs</Link>
 		</Compile>
 	</ItemGroup>
 	
