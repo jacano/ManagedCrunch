@@ -1,4 +1,3 @@
-version: 1.0.{build}
 shallow_clone: true
 image: Visual Studio 2017
 environment:
@@ -11,5 +10,4 @@ init:
 build_script:
   - ps: .\build_windows.ps1
   - ps: .\build_uwp.ps1
-  - ps: .\build_android.ps1
 
