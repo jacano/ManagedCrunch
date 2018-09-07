@@ -3,7 +3,7 @@
 
 	<ItemGroup>
   
-		<Compile Include="$(MSBuildThisFileDirectory)../../src/CrunchPInvoke.cs">
+		<Compile Include="$(MSBuildThisFileDirectory)../src/CrunchPInvoke.cs">
 			<Link>ManagedCrunch.Bindings/CrunchPInvoke.cs</Link>
 		</Compile>
 		

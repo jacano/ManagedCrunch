@@ -2,7 +2,6 @@
 using Android.Widget;
 using Android.OS;
 using ManagedCrunch.Sample.Shared;
-using System.IO;
 
 namespace ManagedCrunch.Sample.Android
 {
@@ -19,7 +18,15 @@ namespace ManagedCrunch.Sample.Android
             FileHelper.ProcessEmbeddedFile("kodim15.crn", (b) =>
             {
                 var dxt1Texture = CrunchHelper.CrnDecompress(b);
-                // 196608
+
+                if (dxt1Texture.Length == 196608)
+                {
+                    Toast.MakeText(this, "Ok", ToastLength.Long).Show();
+                }
+                else
+                {
+                    Toast.MakeText(this, "Error", ToastLength.Long).Show();
+                }
             });
         }
     }

@@ -12,6 +12,7 @@ crunch.build/
 xcuserdata/
 secrets/
 libs/
+nuget/
 
 *.suo
 *.user

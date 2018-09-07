@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
-	<ItemGroup Condition="'$(Configuration)' == 'Debug_Nuget'">
-		<PackageReference Include="ManagedCrunch" Version="1.0.6" />
+	<ItemGroup>
+		<PackageReference Include="ManagedCrunch.Bindings" Version="1.0.7" />
+		<PackageReference Include="ManagedCrunch.Native" Version="1.0.7" />
 	</ItemGroup>
 </Project>

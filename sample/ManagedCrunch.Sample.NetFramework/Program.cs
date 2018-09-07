@@ -1,10 +1,5 @@
 ﻿using ManagedCrunch.Sample.Shared;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ManagedCrunch.Sample.NetFramework
 {
@@ -15,8 +10,18 @@ namespace ManagedCrunch.Sample.NetFramework
             FileHelper.ProcessEmbeddedFile("kodim15.crn", (b) =>
             {
                 var dxt1Texture = CrunchHelper.CrnDecompress(b);
-                // 196608
+
+                if (dxt1Texture.Length == 196608)
+                {
+                    Console.WriteLine("Ok");
+                }
+                else
+                {
+                    Console.WriteLine("Error");
+                }
             });
+
+            Console.ReadLine();
         }
     }
 }

@@ -19,7 +19,17 @@ namespace ManagedCrunch.Sample.iOS
             FileHelper.ProcessEmbeddedFile("kodim15.crn", (b) =>
             {
                 var dxt1Texture = CrunchHelper.CrnDecompress(b);
-                // 196608
+
+                if (dxt1Texture.Length == 196608)
+                {
+                    var msg = new UIAlertView("Ok", "", (IUIAlertViewDelegate)null, "Close", null);
+                    msg.Show();
+                }
+                else
+                {
+                    var msg = new UIAlertView("Error", "", (IUIAlertViewDelegate)null, "Close", null);
+                    msg.Show();
+                }
             });
         }
 
