@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ManagedCrunch</id>
+        <version>1.0.0</version>
+        <authors>jacano</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>ManagedCrunch</description>
+		<dependencies>
+			<group>
+				<dependency id="ManagedCrunch.Bindings" version="1.0.8" />
+				<dependency id="ManagedCrunch.Native" version="1.0.8" />
+			</group>
+		</dependencies>
+	</metadata>
+	<files>	
+		<file src="**" /> 
+    </files>
+</package>
