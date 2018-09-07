@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
 	<ItemGroup>
-		<PackageReference Include="ManagedCrunch.Bindings" Version="1.0.7" />
-		<PackageReference Include="ManagedCrunch.Native" Version="1.0.7" />
+		<PackageReference Include="ManagedCrunch.Bindings" Version="1.0.8" />
+		<PackageReference Include="ManagedCrunch.Native" Version="1.0.8" />
 	</ItemGroup>
 </Project>
