@@ -1,6 +1,0 @@
-language: cpp
-os: osx
-osx_image: xcode9.2
-
-script: 
-    - ./build_ios.sh
