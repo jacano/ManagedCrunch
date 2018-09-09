@@ -7,4 +7,4 @@ popd
 rm -rf artifacts/android
 mkdir -p artifacts/android
 mv -v src/crunch.android/libs/* artifacts/android/
-cp artifacts/android/armeabi-v7a artifacts/android/armeabi
+cp -r artifacts/android/armeabi-v7a artifacts/android/armeabi/
