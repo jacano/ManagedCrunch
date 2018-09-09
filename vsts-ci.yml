@@ -6,13 +6,13 @@ jobs:
   - powershell: ./build.windows.ps1    
   - powershell: ./build.uwp.ps1 
   - powershell: ./build.android.ps1   
-- job: Linux
-  pool:
-    vmImage: 'ubuntu-16.04'
-  steps:
-  - script: ./build.ios.sh 
 - job: MacOS
   pool:    
     vmImage: 'macOS 10.13'
   steps:
-  - script: echo Linux build TODO
+  - script: ./build.ios.sh 
+- job: Linux
+  pool:
+    vmImage: 'ubuntu-16.04'
+  steps:
+  - script: echo Linux build TODO 
