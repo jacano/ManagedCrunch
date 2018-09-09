@@ -5,7 +5,6 @@ jobs:
   steps:
   
   - powershell: ./build_windows.ps1    
-  - powershell: ./build_uwp.ps1 
   
   - task: PublishBuildArtifacts@1
     displayName: Publish Windows package
@@ -14,6 +13,8 @@ jobs:
       artifactName: windows
       artifactType: container  
       
+  - powershell: ./build_uwp.ps1 
+  
   - task: PublishBuildArtifacts@1
     displayName: Publish UWP package
     inputs:
@@ -28,7 +29,6 @@ jobs:
   steps:
   
   - script: ./build_ios.sh 
-  - script: ./build_android.sh 
   
   - task: PublishBuildArtifacts@1
     displayName: Publish iOS package
@@ -37,6 +37,8 @@ jobs:
       artifactName: ios
       artifactType: container  
       
+  - script: ./build_android.sh 
+  
   - task: PublishBuildArtifacts@1
     displayName: Publish Android package
     inputs:
