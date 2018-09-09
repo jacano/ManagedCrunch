@@ -3,14 +3,47 @@ jobs:
   pool:
     vmImage: 'vs2017-win2016'
   steps:
+  
   - powershell: ./build_windows.ps1    
-  - powershell: ./build_uwp.ps1   
+  - powershell: ./build_uwp.ps1 
+  
+  - task: PublishBuildArtifacts@1
+    displayName: Publish Windows package
+    inputs:
+      pathtoPublish: $(Build.SourcesDirectory)/artifacts/windows
+      artifactName: windows
+      artifactType: container  
+      
+  - task: PublishBuildArtifacts@1
+    displayName: Publish UWP package
+    inputs:
+      pathtoPublish: $(Build.SourcesDirectory)/artifacts/uwp
+      artifactName: uwp
+      artifactType: container       
+      
+      
 - job: MacOS
   pool:    
     vmImage: 'macOS 10.13'
   steps:
+  
   - script: ./build_ios.sh 
   - script: ./build_android.sh 
+  
+  - task: PublishBuildArtifacts@1
+    displayName: Publish iOS package
+    inputs:
+      pathtoPublish: $(Build.SourcesDirectory)/artifacts/ios
+      artifactName: ios
+      artifactType: container  
+      
+  - task: PublishBuildArtifacts@1
+    displayName: Publish Android package
+    inputs:
+      pathtoPublish: $(Build.SourcesDirectory)/artifacts/android
+      artifactName: android
+      artifactType: container  
+      
 - job: Linux
   pool:
     vmImage: 'ubuntu-16.04'
