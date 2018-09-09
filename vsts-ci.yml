@@ -2,23 +2,18 @@ jobs:
 - job: Windows
   pool:
     vmImage: 'vs2017-win2016'
-
   steps:
   - powershell: |
-    ./build.windows.ps1  
-
+    ./build.windows.ps1      
 - job: Linux
   pool:
     vmImage: 'ubuntu-16.04'
-    
   steps:
   - script: |
     ./build.ios.sh 
-    
 - job: MacOS
   pool:    
     vmImage: 'macOS 10.13'
-    
   steps:
   - script: echo Hello, world!
     displayName: 'Run a one-line script'
