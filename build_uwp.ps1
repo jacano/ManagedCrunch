@@ -18,5 +18,5 @@ if (-not (Test-Path "artifacts")) { New-Item "artifacts" -type directory -force 
 if (Test-Path "artifacts/uwp") { Remove-Item "artifacts/uwp" -Force -Recurse }
 New-Item "artifacts/uwp" -type directory -force
 
-Move-Item "src/crunch.Windows/universal/build" "artifacts/uwp" -Force
+Get-ChildItem -Path "src/crunch.Windows/universal/build" -Recurse | Move-Item -Force -Destination "artifacts/uwp"
 

@@ -6,4 +6,4 @@ popd
 
 rm -rf artifacts/android
 mkdir -p artifacts/android
-mv src/crunch.android/libs artifacts/android
+mv -v src/crunch.android/libs/* artifacts/android/
