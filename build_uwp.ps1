@@ -14,6 +14,9 @@ xcopy /F /R /Y /I ARM\Release\libcrunch.dll build\arm\*
 
 popd
 
-New-Item "artifacts" -type directory -force
+if (-not (Test-Path "artifacts")) { New-Item "artifacts" -type directory -force }
+if (Test-Path "artifacts/uwp") { Remove-Item "artifacts/uwp" -Force -Recurse }
+New-Item "artifacts/uwp" -type directory -force
+
 Move-Item "src/crunch.Windows/universal/build" "artifacts/uwp" -Force
 
