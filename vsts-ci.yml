@@ -4,16 +4,16 @@ jobs:
     vmImage: 'vs2017-win2016'
 
   steps:
-  - script: echo Hello, world!
-    displayName: 'Run a one-line script'    
+  - powershell: |
+    ./build.windows.ps1  
 
 - job: Linux
   pool:
     vmImage: 'ubuntu-16.04'
     
   steps:
-  - script: echo Hello, world!
-    displayName: 'Run a one-line script'
+  - script: |
+    ./build.ios.sh 
     
 - job: MacOS
   pool:    
