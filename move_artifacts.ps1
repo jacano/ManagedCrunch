@@ -8,17 +8,16 @@ function DownloadAndExpandArtifact([string]$buildId, [string]$artifactName)
 	$artifactUrl = 'https://jacanovsts.visualstudio.com/ManagedCrunch/_apis/build/builds/' + $buildId + '/artifacts?artifactName=' + $artifactName + '&api-version=5.0-preview.3&%24format=zip'
 	wget $artifactUrl -OutFile "artifacts/$artifactName.zip"
 	
-	Expand-Archive "artifacts/$artifactName.zip" -DestinationPath "artifacts/$artifactName"
-	Remove-Item "artifacts/$artifactName.zip" -Force -Recurse
+	Expand-Archive "artifacts/$artifactName.zip" -DestinationPath "artifacts/"
 }
 
 if (Test-Path "artifacts") { Remove-Item "artifacts" -Force -Recurse }
 New-Item "artifacts" -type directory -force
 
-DownloadAndExpandArtifact "42" "android"
-DownloadAndExpandArtifact "42" "ios"
-DownloadAndExpandArtifact "42" "windows"
-DownloadAndExpandArtifact "42" "uwp"
+DownloadAndExpandArtifact "43" "android"
+DownloadAndExpandArtifact "43" "ios"
+DownloadAndExpandArtifact "43" "windows"
+DownloadAndExpandArtifact "43" "uwp"
 
 Copy-Item artifacts/windows/* src/ManagedCrunch/ManagedCrunch.Native/build/net45 -Force -Recurse
 Copy-Item artifacts/uwp/* src/ManagedCrunch/ManagedCrunch.Native/build/uap10.0 -Force -Recurse
