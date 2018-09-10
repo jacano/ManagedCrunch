@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedCrunch", "ManagedCrunch.shproj", "{68808B19-7CE6-414B-890F-DF8452AA68FE}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ManagedCrunch.projitems*{68808b19-7ce6-414b-890f-df8452aa68fe}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40775D15-0DFF-452A-AED5-56AAEBA5D5A3}
+	EndGlobalSection
+EndGlobal
