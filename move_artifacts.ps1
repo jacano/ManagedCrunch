@@ -1,6 +1,6 @@
 <#
-https://jacanovsts.visualstudio.com/ManagedCrunch/_build/latest?definitionId=1
-https://jacanovsts.visualstudio.com/ManagedCrunch/_build?buildId=43
+	https://jacanovsts.visualstudio.com/ManagedCrunch/_build/latest?definitionId=1
+	https://jacanovsts.visualstudio.com/ManagedCrunch/_build?buildId=43
 #>
 
 function DownloadAndExpandArtifact([string]$buildId, [string]$artifactName)
