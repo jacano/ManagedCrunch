@@ -1,11 +1,11 @@
 <#
-https://jacanovsts.visualstudio.com/ManagedXZLZMA/_build/latest?definitionId=2
-https://jacanovsts.visualstudio.com/ManagedXZLZMA/_build?buildId=42
+https://jacanovsts.visualstudio.com/ManagedCrunch/_build/latest?definitionId=1
+https://jacanovsts.visualstudio.com/ManagedCrunch/_build?buildId=43
 #>
 
 function DownloadAndExpandArtifact([string]$buildId, [string]$artifactName)
 {
-	$artifactUrl = 'https://jacanovsts.visualstudio.com/ManagedXZLZMA/_apis/build/builds/' + $buildId + '/artifacts?artifactName=' + $artifactName + '&api-version=5.0-preview.3&%24format=zip'
+	$artifactUrl = 'https://jacanovsts.visualstudio.com/ManagedCrunch/_apis/build/builds/' + $buildId + '/artifacts?artifactName=' + $artifactName + '&api-version=5.0-preview.3&%24format=zip'
 	wget $artifactUrl -OutFile "artifacts/$artifactName.zip"
 	
 	Expand-Archive "artifacts/$artifactName.zip" -DestinationPath "artifacts/$artifactName"
