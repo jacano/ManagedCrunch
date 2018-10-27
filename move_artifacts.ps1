@@ -1,7 +1,7 @@
-<#
-	https://jacanovsts.visualstudio.com/ManagedCrunch/_build/latest?definitionId=1
-	https://jacanovsts.visualstudio.com/ManagedCrunch/_build?buildId=43
-#>
+param (
+	[Parameter(Mandatory=$true)]
+    [string]$buildId
+)
 
 function DownloadAndExpandArtifact([string]$buildId, [string]$artifactName)
 {
@@ -14,10 +14,10 @@ function DownloadAndExpandArtifact([string]$buildId, [string]$artifactName)
 if (Test-Path "artifacts") { Remove-Item "artifacts" -Force -Recurse }
 New-Item "artifacts" -type directory -force
 
-DownloadAndExpandArtifact "43" "android"
-DownloadAndExpandArtifact "43" "ios"
-DownloadAndExpandArtifact "43" "windows"
-DownloadAndExpandArtifact "43" "uwp"
+DownloadAndExpandArtifact $buildId "android"
+DownloadAndExpandArtifact $buildId "ios"
+DownloadAndExpandArtifact $buildId "windows"
+DownloadAndExpandArtifact $buildId "uwp"
 
 Copy-Item artifacts/windows/* src/ManagedCrunch/ManagedCrunch.Native/build/net45 -Force -Recurse
 Copy-Item artifacts/uwp/* src/ManagedCrunch/ManagedCrunch.Native/build/uap10.0 -Force -Recurse
