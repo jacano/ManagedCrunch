@@ -1,10 +1,20 @@
 # ManagedCrunch
-Managed wrapper for crnlib (https://github.com/BinomialLLC/crunch)
 
-[![Build Status](https://jacanovsts.visualstudio.com/ManagedCrunch/_apis/build/status/jacano.ManagedCrunch)](https://jacanovsts.visualstudio.com/ManagedCrunch/_build/latest?definitionId=1)
-[![NuGet Badge](https://buildstats.info/nuget/ManagedCrunch)](https://www.nuget.org/packages/ManagedCrunch/)
+Managed C# wrapper for [crnlib](https://github.com/BinomialLLC/crunch), the crunch texture compression library.
 
-ManagedCrunch exposes the following crnlib functions in C# using direct Pinvokes to C/C++ code:
+[![NuGet](https://img.shields.io/nuget/v/ManagedCrunch?logo=nuget)](https://www.nuget.org/packages/ManagedCrunch/)
+[![NuGet downloads](https://img.shields.io/nuget/dt/ManagedCrunch?logo=nuget)](https://www.nuget.org/packages/ManagedCrunch/)
+
+## Install
+
+```
+dotnet add package ManagedCrunch
+```
+
+## What it exposes
+
+ManagedCrunch calls crnlib from C# with direct P/Invokes:
+
 * crn_get_width
 * crn_get_height
 * crn_get_levels
